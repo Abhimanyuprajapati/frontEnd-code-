@@ -1,0 +1,49 @@
+.LoginPage{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    box-sizing: border-box;
+    background-image: url("../assets/loginPage/Rectangle 421.png");
+    /* display: flex;
+    text-align: center;
+    justify-content: center; */
+}
+.LoginPage .LoginPageDetail{
+    /* margin-top: 1rem; */
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    /* padding-top: 5rem; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    background-image: url("../assets/loginPage/Group 66870.png");
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (min-width:600px) {
+    .LoginPage{
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+        background-image: url("../assets/loginPage/Rectangle 421.png");
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .LoginPage .LoginPageDetail{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center; 
+        align-items: center;
+        background-image: url("../assets/loginPage/Group 66870.png");
+        width: 100%;
+        height: auto;
+    }
+}
