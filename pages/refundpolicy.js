@@ -12,21 +12,21 @@ const Refundpolicy = () => {
                     <h2>Refund & Cancellation</h2>
                 </div>
                     <p align="left">
-                        policy applies to filmcityi Site/App Platforms including without limitation
-                        <a href="https://www.filmcityi.app" style={{'color':'red'}}> www.filmcityi.app</a> other related
+                        policy applies to Jalwa Site/App Platforms including without limitation
+                        <a href="https://www.Jalwa.app" style={{'color':'red'}}> www.Jalwa.app</a> other related
                         Sites/s or App/s,
                         mobile
                         applications and other online features each a “Site/s or App/s”.We have provided extensive
                         information
                         for you to view the packages before choosing to subscribe to us. If you have any questions or
                         reservations, please contact us at
-                        <a href="mailto:contact@filmcityi.app" style={{'color':'red'}}> contact@filmcityi.app</a> prior
+                        <a href="mailto:contact@Jalwa.app" style={{'color':'red'}}> contact@Jalwa.app</a> prior
                         to
                         subscribing to our
                         services.
                         We,being the service providers for contents available through website or APP where you are
                         expected to
-                        view packages of your choice after being paid for subscription,unfortunately,all fees to filmcityi
+                        view packages of your choice after being paid for subscription,unfortunately,all fees to Jalwa
                         for
                         such services are non refundable.
                         <br/>

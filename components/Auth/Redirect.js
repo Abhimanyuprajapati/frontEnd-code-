@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from "react";
 import Router from "next/router";
 import Header from "../Header";
-import Footer from "../Footer";
+// import Footer from "../Footer";
 import { useUserAuth } from "../../context/UserAuthContext";
 const withRedirect =Component=> {
   const Auth =(props) => {
@@ -21,7 +21,7 @@ const withRedirect =Component=> {
       <div className="outer">
       <Header state={state}/>
       <Component {...props} />
-      <Footer/>
+      {/* <Footer/> */}
       </div>
     );
   };

@@ -2,8 +2,8 @@ import React,{useState,useEffect} from 'react'
 import { useUserAuth } from '../context/UserAuthContext'
 import Link from 'next/link';
 import Image from 'next/image';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+// import Header from '../components/Header';
+// import Footer from '../components/Footer';
 import withState from '../components/Auth/State'
 const static_url = process.env.NEXT_PUBLIC_CDN_STATIC;
 const search = () => {

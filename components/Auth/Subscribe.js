@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import Router from "next/router";
 import Header from "../Header";
-import Footer from "../Footer";
+// import Footer from "../Footer";
 import { useUserAuth } from "../../context/UserAuthContext";
 const withSubscribe=Component=> {
   const Auth =(props) => {
@@ -28,7 +28,7 @@ const withSubscribe=Component=> {
       <div className="outer">
       <Header state={state}/>
       <Component {...props} />
-      <Footer/>
+      {/* <Footer/> */}
       </div>
     );
   };
