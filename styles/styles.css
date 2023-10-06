@@ -5,6 +5,39 @@ html {
 * {
   box-sizing: border-box;
 }
+/* ------------------------------------- */
+/* this is login page css */
+.login_page_css{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  padding-top: 5rem;
+}
+/* ------------------------------------- */
+/* this is about us page css */
+.AboutUsPage_css{
+  color: white;
+}
+/* ------------------------------------- */
+/* this is subscription page css */
+.subscriptionPage_css{
+  color: white;
+}
+/* ------------------------------------- */
+
+
+
+
+
+
+
+
+
+
 .activate {
   height: 400px;
   background-color: #1c1a25;

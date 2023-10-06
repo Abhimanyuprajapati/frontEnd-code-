@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import Image from 'next/image'
-import logo from '../assets/logo/FilmCity.png'
-import Link from 'next/link';
+import logo from '../assets/logo/Jalwa.png'
+import Link from 'next/link'; 
 import vector from '../assets/image/profile.png';
 import { useRouter } from 'next/router';
 const Header = ({state}) => {

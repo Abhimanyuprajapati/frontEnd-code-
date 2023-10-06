@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header";
-import Footer from "../Footer";
+// import Footer from "../Footer";
 import { useUserAuth } from "../../context/UserAuthContext";
 const withState =Component=> {
   const Auth =(props) => {
@@ -20,7 +20,7 @@ const withState =Component=> {
       <div className="outer">
       <Header state={state}/>
       <Component {...props} />
-      <Footer/>
+      {/* <Footer/> */}
       </div>
     );
   };

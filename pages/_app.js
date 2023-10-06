@@ -5,9 +5,7 @@ import Script from 'next/script';
 import Head from 'next/head';
 import '../components/Player/Player.css';
 import '../components/Gateways/App.css';
-import '../styles/login.css';   //this is login page css goes here
-import '../styles/aboutusPage.css';   //this is about page css goes here
-import '../styles/subscriptionPage.css';    //this is subscription page css goes here
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -15,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     {/*<Script src="https://securegw.paytm.in/merchantpgpui/checkoutjs/merchants/VOOVID43363199343335.js"></Script>*/}
     <Script src="https://securegw.paytm.in/merchantpgpui/checkoutjs/merchants/RABBIT83100137902764.js"></Script>
     <Head>
-    <title>FilmCity</title>
+    <title>Jalwa</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
     </Head>
     <UserAuthContextProvider>

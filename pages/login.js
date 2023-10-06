@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
+// import Link from 'next/link'
 import Image from 'next/image'
 import facebook from '../assets/loginPage/Group 292 (1).png';
 import google from '../assets/loginPage/Group 294.png';
-import whatsapp from '../assets/loginPage/Group 292.png';
-import user from "../assets/image/input_field_user.png";
-import password from "../assets/image/input_field_password.png";
-import logo from '../assets/logo/FilmCity.png';
-import LoginOr from '../assets/loginPage/Group 66873.png';
+// import whatsapp from '../assets/loginPage/Group 292.png';
+// import user from "../assets/image/input_field_user.png";
+// import password from "../assets/image/input_field_password.png";
+// import logo from '../assets/logo/FilmCity.png';
+// import LoginOr from '../assets/loginPage/Group 66873.png';
 import { useUserAuth } from '../context/UserAuthContext';
 import withRedirect from '../components/Auth/Redirect';
-import ReCAPTCHA from 'react-google-recaptcha';
-import EmailIcon from '@mui/icons-material/Email';
-import LockIcon from '@mui/icons-material/Lock';
+// import ReCAPTCHA from 'react-google-recaptcha';
+// import EmailIcon from '@mui/icons-material/Email';
+// import LockIcon from '@mui/icons-material/Lock';
 const SITE_KEY = process.env.NEXT_PUBLIC_SITE_KEY;
 
 const Login = () => {
