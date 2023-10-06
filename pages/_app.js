@@ -5,7 +5,9 @@ import Script from 'next/script';
 import Head from 'next/head';
 import '../components/Player/Player.css';
 import '../components/Gateways/App.css';
-import '../styles/login.css';
+import '../styles/login.css';   //this is login page css goes here
+import '../styles/aboutusPage.css';   //this is about page css goes here
+import '../styles/subscriptionPage.css';    //this is subscription page css goes here
 function MyApp({ Component, pageProps }) {
   return (
     <>

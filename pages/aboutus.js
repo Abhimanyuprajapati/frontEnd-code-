@@ -40,31 +40,49 @@ const Aboutus = () => {
         }
       }
   return (
-    <>
-    <div className='aboutus row'>
-        <div className='container'>
-        <div className='col-md-6'>
-            <div className='innerabout'>
-            <Image src={logo} alt="imd" width="300" height="300"/>
-            </div>
-        </div>
-        <div className='col-md-6'>
-        <h2>About Company</h2><br/>
-        <p>filmcityi is a video streaming service that offers a wide variety of genres from drama, comedy, erotic and beyond. 
-            Binge watch from our collection of web series, filmcityi originals and more. Enjoy unlimited video streaming at a 
-            pocket friendly price all year long.<br/><br/>
-            filmcityi is a video streaming service that offers a wide variety of genres from drama, comedy, erotic and beyond. 
-                Binge watch from our collection of web series, filmcityi originals and more. Enjoy unlimited video streaming at a 
-                pocket friendly price all year long.
+    <div className='AboutUsPage_css'>
+        <h1>About Us</h1>
+        <h5>Get hooked to binge-worthy content</h5>
+        <h5>tailored to your taste in your language!</h5>
+        <p>Ullu is a video streaming service that offers a wide variety of genres from drama, horror, suspense, thriller to comedy & beyond. 
+            Binge watch from our collection of web series, movies, Ullu Originals and more in your regional language. 
+            Start a Free Trial and your first 2 videos will be on us. 
+            Enjoy unlimited video streaming and downloads at a pocket friendly price all year long.
         </p>
-        </div>
-        </div> 
-        <div className='container'>
-            <Download/>
-        </div>      
+        <ul>
+            <li>check Flip through trailers to help choose what to watch first.</li>
+            <li>check Personalized content according to your geographical location.</li>
+            <li>check Unlimited HD streaming and downloading 24x7.</li>
+            <li>check Personalize your membership plan to suit your need.</li>
+            <li>check Access content anywhere in the world.</li>
+            <li>check Download videos for offline viewing-on-the-go.</li>
+        </ul>
     </div>
-    </>
   )
 }
 
 export default withState(Aboutus);
+
+// this is the filmacity code
+{/* <div className='aboutus row'>
+<div className='container'>
+<div className='col-md-6'>
+    <div className='innerabout'>
+    <Image src={logo} alt="imd" width="300" height="300"/>
+    </div>
+</div>
+<div className='col-md-6'>
+<h2>About Company</h2><br/>
+<p>filmcityi is a video streaming service that offers a wide variety of genres from drama, comedy, erotic and beyond. 
+    Binge watch from our collection of web series, filmcityi originals and more. Enjoy unlimited video streaming at a 
+    pocket friendly price all year long.<br/><br/>
+    filmcityi is a video streaming service that offers a wide variety of genres from drama, comedy, erotic and beyond. 
+        Binge watch from our collection of web series, filmcityi originals and more. Enjoy unlimited video streaming at a 
+        pocket friendly price all year long.
+</p>
+</div>
+</div> 
+<div className='container'>
+    <Download/>
+</div>      
+</div> */}
