@@ -1,8 +1,9 @@
 import React,{useEffect,useState} from 'react'
 import Image from 'next/image'
-import logo from '../assets/logo/Jalwa.png'
+import logo from '../assets/logo/Jalva.png'
 import Link from 'next/link'; 
-import vector from '../assets/image/profile.png';
+import vector from '../assets/loginPage/menu.png';
+import install from '../assets/loginPage/install.png';
 import { useRouter } from 'next/router';
 const Header = ({state}) => {
   const [flag,setflag]=useState(false)
@@ -23,30 +24,10 @@ const Header = ({state}) => {
     }
   },[])
   return (
-    <div className={navbar?"header":"header active"}>
+    <div className={"header active"}>
+      <Image src={vector} alt="menu" className='menubar'/>
       <Link href="/"><Image src={logo} alt="logo" className="logo"/></Link>
-      <div className='right-nav'>
-      {!state ? <Link href="/login" className={path==="/login" ? 'active':''}>
-        <p><i className="fa fa-user"></i> Login / Signup</p></Link>:
-       <Link href={`/profile/${userId}`}><p><Image src={vector} className="pro" width="20" height="20" alt="userqq"/>  Account</p></Link>}
-        <Link href='/search' className={path==="/search" ? 'home active':'home'}><i className='fa fa-search'></i> Search</Link>
-        {subscribe? '':<Link href="/subscription" className={path==="/subscription" ? 'home active':'home'}><i className="fa fa-rocket"/>Subscription</Link>}
-        <Link href="/upcoming" className={path==="/upcoming" ? 'home active':'home'}> Upcoming</Link>
-        <Link href="/" className={path==="/" ? 'home active':'home'}><i className="fa fa-home"></i> Home</Link>
-      </div>
-      {/*for mobile devices menu bar options*/}
-      <div className='mobile-primary'>
-        <i className='fa fa-bars' onClick={()=>setflag(!flag)}></i>
-        {!state ? <Link href="/login"><p><Image src={vector} width="20" className='pro' height="20" alt="user"/> Login / Signup</p></Link>: 
-        <Link href={`/profile/${userId}`}><p><Image src={vector} width="20" className='pro' height="20" alt="user"/> Account</p></Link>}
-        <div className={!flag ? 'mobile-child hide':'mobile-child'}>
-        <i className='fa fa-close' onClick={()=>setflag(!flag)}/>
-        <Link href="/" className="home"><i className="fa fa-home"></i>  Home</Link>
-        <Link href="/search" className="home"><i className="fa fa-search"></i> Search</Link>
-        {!subscribe ? <Link href="/subscription" className={path==="/subscription" ? 'home active':'home'}><i className="fa fa-rocket"/> Subscription</Link>:''}
-        <Link href="/upcoming" className="home"><i className="fa fa-image"></i>  Upcoming</Link>
-        </div>
-      </div>      
+      <Image src={install} alt="install-btn" className='install'/>
     </div>
   )
 }

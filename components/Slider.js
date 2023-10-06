@@ -31,34 +31,17 @@ const Slider = ({data}) => {
     }
   return (
     <div className='banner'>
-    
-    <Image src={static_url +'/' +container.awsStaticResourcePath +'/'+container.landscapePosterIdNormal} alt="slider" width="1200" height="800" className='mainimage'/>
-    <div className='details'>
-      <h1>{container.title}</h1>
-      <p>{container.description}</p>
-      <Link href={'/contents/'+`${container.title}`} >
-      <button className='btn btn-secondary play'>
-        <FontAwesomeIcon icon={faPlay} className="fa" /><span className='text'>Play Now</span>
-      </button>
-      </Link>
-      <button className='btn btn-secondary watch' style={{'marginLeft':'10px'}}><FontAwesomeIcon icon={faPlus} className="fa" /><span className='text'> Add to WatchList</span></button>
-    </div>
-    <div className='trailer-title'>
-    <h2>Movies Trailer</h2>
-    <p> {index1+1} /{data.length} </p>
-    </div>
-    
     <Swiper
       className='desktop'
       loop={true}
-      slidesPerView={ flag ? 2 : 5}
+      slidesPerView={2}
       centeredSlides= {true}
       pagination={{
         clickable: true,
       }}
       navigation={true} 
       modules={[Pagination,Navigation]}
-      spaceBetween={5}
+      spaceBetween={50}
       onSlideChange={(e) => appenddata(e)}
     >
       {data.map((x,index)=>{

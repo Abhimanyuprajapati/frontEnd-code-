@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router';
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 const static_url = process.env.NEXT_PUBLIC_CDN_STATIC;
 import { Access } from '../../services/context';

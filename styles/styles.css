@@ -473,15 +473,12 @@ cursor: pointer;
 .profile {
   padding: 80px 20px 20px 20px;
 }
-.header .mobile-primary {
-  display: none;
-}
 
-.container {
+.home {
   padding: 10px 0px;
   margin: 0px;
   /* background-color: #1c1a25; */
-  background: linear-gradient(140deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(48, 1, 1));
+  background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba(0, 0, 0, 0.80) 100%);
   width: 100%;
   height: auto;
 }
@@ -494,7 +491,6 @@ cursor: pointer;
 .header {
   font-family: Arial;
   padding: 0px 20px 10px 20px;
-  background-color: transparent;
   font-family: "Futura PT Demi";
   width: 100%;
   top: 0;
@@ -503,166 +499,35 @@ cursor: pointer;
   height: 80px;
   position: fixed;
   display: flex;
+backdrop-filter: blur(7.5px);
+background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba(0, 0, 0, 0.80) 100%);
+
 }
 .header.active {
-  background: linear-gradient(to bottom, #1c1a25, transparent);
+  /*background: linear-gradient(to bottom, #1c1a25, transparent);*/
 }
 .header .logo {
-  width: 60px;
-  height: 60px;
+  width: auto;
+  height: auto;
   margin: 10px 0;
 }
-.header .right-nav {
-  float: right;
-  width: 90%;
-  padding: 0px;
-  margin: 0 0% 0 0;
+.header .install{
+  margin: 1% 0 0 75%;
+  width: 180px;
+  height: auto;
 }
-.header .right-nav .fa {
-  padding: 0px 10px;
-  margin: 0;
-}
-.header .right-nav a {
-  color: #fff;
-  font-size: 16px;
-  border-top: 10px solid transparent;
-  padding: 10px 0px;
-  margin: 0 0% 0 4%;
-  font-family: sans-serif;
-  float: right;
-  text-decoration: none;
-  letter-spacing: 1px;
-}
-.header .right-nav a:hover,
-.header .right-nav a.active {
-  color: orange;
-  border-bottom: 2px solid orange;
-  border-radius: 0px;
+.header .menubar{
+  width: 35px;
+  margin: 20px 15px 15px 0;
+  height: 35px;
+  cursor: pointer;
 }
 /*slider css*/
 .banner {
-  margin: 0;
+  margin: 80px 0 0 0;
   padding: 0;
   position: relative;
-  background: linear-gradient(140deg, rgb(0, 0, 0), rgb(0, 0, 0), rgb(48, 1, 1));
-}
-.banner .details {
-  padding: 10px 10px;
-  height: auto;
-  position: absolute;
-  z-index: 99999999;
-  width: 550px;
-  margin-top: -42%;
-  color: #fff;
-  margin-left: 0px;
-}
-.banner .details a {
-  text-decoration: none;
-}
-.banner .details .play,
-.content-details .details .play {
-  /*#E11E25, #F6AD1B*/
-  border-radius: 10px;
-background: linear-gradient(277deg, #E11E25 0%, #F6AD1B 100%);
-  color: #fff;
-  border: none;
-  padding: 5px 30px 5px 5px;
-  
-  display: inline-flex;
-  margin: 0px 0px 0 0px;
-}
-.banner .details .play .fa,
-.content-details .details .play .fa {
-  color: #fff;
-  border-radius: 6px;
-  padding: 8px 0px 8px 10px ;
-}
-.banner .details .play .text,
-.content-details .details .play .text {
-  margin: 3px 0 0 10px;
-  font-weight: 500;
-}
-.banner .details .watch,
-.content-details .details .watch {
-  background-color: transparent;
-  border: 2px solid #fff;
-  padding: 3px 30px 3px 3px;
-  border-radius: 12px;
-  display: inline-flex;
-  margin: 0px 10px 0 0px;
-}
-.banner .details .watch .fa,
-.content-details .details .watch .fa {
-  color: #fff;
-  border-radius: 50%;
-  padding: 8px 0px 8px 8px;
-}
-.banner .details .watch .text,
-.content-details .details .watch .text {
-  margin: 3px 0 0 10px;
-  color: #fff;
-  font-weight: 500;
-}
-.banner .mainimage {
   width: 100%;
-  opacity: 0.6;
-  position: relative;
-  z-index: 1;
-  height:720px;
-}
-.banner .gradient {
-  position: absolute;
-  width: 40px;
-  height: 750px;
-  background-image: linear-gradient(to right, #1c1a25, transparent);
-  z-index: 9;
-  margin: 0px 0 0 0px;
-  top: 100;
-}
-.banner .gradient1 {
-  position: absolute;
-  width: 50px;
-  height: 700px;
-  background-image: linear-gradient(to left, #1c1a25, transparent);
-  z-index: 9;
-  margin: 60px 0 0 0px;
-  right: 0;
-  top: 0;
-}
-.banner .desktop {
-  margin: 0%;
-  width: 100%;
-  padding: 0;
-  z-index: 999;
-  background: transparent;
-}
-.banner .trailer-title {
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  margin: -18% 0 0 0px;
-  padding: 10px 10px 0 10px;
-  opacity: 1;
-}
-.banner .trailer-title h2 {
-  color: #fff;
-  font-size: 24px;
-  padding: 0;
-  z-index: 9999999;
-  margin: 0;
-}
-.banner .trailer-title p {
-  color: #fff;
-  font-size: 18px;
-  z-index: 9999999;
-  margin: 0;
-}
-.banner .sliderback1 {
-  position: absolute;
-  left: 0;
-  margin-left: 0px;
-  z-index: 9;
-  top: 20px;
 }
 
 .banner .swiper-slide {
@@ -685,7 +550,7 @@ background: linear-gradient(277deg, #E11E25 0%, #F6AD1B 100%);
 }
 
 .banner .swiper-slide {
-  height: 260px;
+  height: 600px;
   background: transparent;
   opacity: 0.7;
   margin: 0% 0px 0px 0;
@@ -696,8 +561,8 @@ background: linear-gradient(277deg, #E11E25 0%, #F6AD1B 100%);
   color: #fff;
   background: transparent;
   margin: 0px 0 0 0;
-  transform: scale(1.2);
   z-index: 99;
+  border-radius: 12px;
   opacity: 1;
   transition: 0.3s linear;
 }
@@ -709,54 +574,52 @@ background: linear-gradient(277deg, #E11E25 0%, #F6AD1B 100%);
   display: none;
 }
 
-.swiper-button-prev {
+.banner .swiper-button-prev {
   position: absolute;
   background-image: url("../assets/image/prev-icon.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   padding: 10px;
   overflow: hidden;
 }
-.swiper-button-next {
+.banner .swiper-button-next {
   position: absolute;
   background-image: url("../assets/image/next-icon.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   padding: 10px;
   z-index: 999;
   overflow: hidden;
 }
-.banner .swiper-slide Link {
-  border: 4px solid goldenrod;
-}
+
 .banner .swiper-slide a {
   height: 70%;
+  margin: 0 2%;
 }
 .banner .swiper-slide a img {
   width: 100%;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   height: 100%;
   border-radius: 8px;
   padding: 0px;
   margin: 0px;
 }
 .banner .swiper-slide-active a {
-  height: 70%;
+  width: 100%;
+  height: 80%;
+  border-radius: 12px;
 }
 .banner .swiper-slide-active a img {
   width: 100%;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   height: 100%;
-  border-radius: 8px;
-  border: 2px solid #ccc;
+  transform: scale(1.2);
+  border: 1px solid #ccc;
+  border-radius: 12px;
 }
 
 /*frequent question css*/

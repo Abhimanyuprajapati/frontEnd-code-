@@ -43,13 +43,8 @@ function Home({ data }) {
   return (
     // home pagge start from here
 
-    <div className="container p-0">
+    <div className="home">
       <Slider data={data.contents} /> {/*slider components goes here   */}
-
-      <Topmovie data={data.contents} />
-
-      <Download />    {/*Download components goes here  */}
-
       {/* filmcity originals section goes here  */}
       <section className="product">
         <div className="container">
