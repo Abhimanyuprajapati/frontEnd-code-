@@ -17,6 +17,7 @@ function Home({ data }) {
   //client side data fetching
   const [contents, setcontents] = useState([]);
   useEffect(() => {
+    console.log(data)
     callback(data.contents);
   }, []);
 
