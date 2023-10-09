@@ -26,6 +26,10 @@ html {
 /* this is subscription page css */
 .subscriptionPage_css{
   color: white;
+  border: 3px solid #ccc;
+  padding: 20px;
+  margin: 80px  0 0 0;
+  background: linear-gradient(180deg, #F4D42B -96.12%, rgba(246, 173, 27, 0.00) 72.13%);
 }
 /* ------------------------------------- */
 

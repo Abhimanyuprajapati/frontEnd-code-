@@ -44,6 +44,7 @@ function Home({ data }) {
     // home pagge start from here
 
     <div className="home">
+      
       <Slider data={data.contents} /> {/*slider components goes here   */}
       {/* filmcity originals section goes here  */}
       <section className="product">
