@@ -1,13 +1,12 @@
-html {
-  font-family: "Futura PT";
-}
-
 * {
   box-sizing: border-box;
+  font-family: Roboto;
 }
 /* ------------------------------------- */
 /* this is login page css */
+
 .login_page_css{
+  border: 1px solid #ccc;
   color: white;
   display: flex;
   flex-direction: column;
@@ -15,8 +14,59 @@ html {
   align-items: center;
   text-align: center;
   background-color: black;
-  padding-top: 5rem;
+  padding: 7rem 0px;
 }
+.login_page_Input{
+  width: 669.17px;
+height: 92.8px;
+border: 2px solid orange;
+border-radius: 5rem;
+display: flex;
+justify-content: center;
+margin: 3rem 0rem;
+}
+.login_page_mainbox{
+  position: absolute;
+  margin-top: -12px;
+  background-color: #000;
+  padding: 0px 3rem;
+}
+.login_page_Input input{
+  background-color: #000;
+  color: orange;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  height: 3.2rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
+.loginmainDiv button{
+  width: 312px;
+  height: 64px;
+  border-radius: 20px;
+  border: 2px solid orange;
+  background-color: #000;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.orMainLogin{
+  margin: 1rem;
+  font-size: 1.7rem;
+  color: orange;
+}
+.googleAuth{
+  width: auto;
+border: 2px solid orange;
+background-color: #000;
+border-radius: 5rem;
+padding:14px 20px;
+color: white;
+font-size: 2rem;
+  font-weight: 600;
+}
+/* ------------------------------------- */
 /* ------------------------------------- */
 /* this is about us page css */
 .AboutUsPage_css{
@@ -33,15 +83,80 @@ html {
 }
 /* ------------------------------------- */
 
-
-
-
-
-
-
-
-
-
+/*sidenav*/
+.sidenav{
+  width:0px;
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+  left:0;
+  border-radius: 0px 40px 0px 0px;
+  border: 1px solid #FA0;
+  background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba(0, 0, 0, 0.80) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px 0px;
+  transition:cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+ .topnav{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 20px 0;
+  padding: 0 10px;
+}
+ .topnav .in{
+  color: #fff;
+} 
+ .topnav .in p{
+  padding: 0;
+  margin: 0;
+}
+ .topnav .in p:nth-child(1){
+  color: #FA0;
+}
+ .topnav img{
+  cursor: pointer;
+}
+ .topnav img:nth-child(2){
+  margin: 12px 0;
+  cursor: pointer;
+}
+ .topnav img:nth-child(2):hover{
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.sidenav a.hed{
+  color: #fff;
+  width: 100%;
+  border: 1px solid #FA0;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 0 0px 0 55px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.sidenav  ul{
+  width: 100%;
+  margin: 30px 0px;
+  padding: 0 20px;
+  list-style-type: none;
+}
+.sidenav  ul li{
+  font-size: 18px;
+  color: #FA0;
+  margin: 10px 0 0 0px;
+}
+.sidenav  ul li a{
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+}
+.sidenav  ul li a:hover{
+  color: #FA0;
+}
+.sidenav a.hed:hover{
+  color: #FA0;
+  border:1px solid #fff;
+}
 .activate {
   height: 400px;
   background-color: #1c1a25;
@@ -507,18 +622,35 @@ backdrop-filter: blur(7.5px);
 background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba(0, 0, 0, 0.80) 100%);
 
 }
-.header.active {
-  /*background: linear-gradient(to bottom, #1c1a25, transparent);*/
-}
+
 .header .logo {
   width: auto;
   height: auto;
   margin: 10px 0;
 }
 .header .install{
-  margin: 1% 0 0 75%;
-  width: 180px;
-  height: auto;
+  margin: 1.4% 0 0 76%;
+  width: 160px;
+  padding: 0;
+  cursor: pointer;
+  height:50px;
+}
+.header .install:hover,.header .menubar:hover{
+  border-bottom: 1px solid #fff;
+}
+.header .topnav.up{
+  margin: 1% 0 0 65%;
+}
+.header .topnav.bot{
+  display: inline-flex;
+} 
+.header .topnav.bot img{
+  width: auto;
+  height: 20px;
+  margin: 0 15px;
+}
+.header .topnav.up .in{
+  padding: 0 0 0 10px;
 }
 .header .menubar{
   width: 35px;
@@ -584,8 +716,8 @@ background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   padding: 10px;
   overflow: hidden;
 }
@@ -595,8 +727,8 @@ background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  height: 50px;
-  width: 50px;
+  height:40px;
+  width: 40px;
   padding: 10px;
   z-index: 999;
   overflow: hidden;
@@ -616,6 +748,7 @@ background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba
 .banner .swiper-slide-active a {
   width: 100%;
   height: 80%;
+  object-fit: contain;
   border-radius: 12px;
 }
 .banner .swiper-slide-active a img {
@@ -630,7 +763,6 @@ background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba
 .frequent {
   padding: 50px 12% 50px 12%;
   /* background-image: url("../assets/image/Rectangle\ 5.png"); */
-  background-color: black;
   background-size: cover;
   width: 100%;
   height: auto;
@@ -928,21 +1060,26 @@ background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba
 /*product css*/
 .product {
   padding: 0px;
+  width: 100%;
   margin: 0px;
   /* background-color: #1c1a25; */
-  background-color: #000000;
 }
-.product_item_list {
+
+.product .product_category{
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+}
+.product .product_category .product_item_list {
   display: inline-flex;
   width: 100%;
   overflow-x: scroll;
   scroll-behavior: smooth;
   transition: 1s linear;
+  padding: 0;
+  margin: 0;
 }
-.product .container {
-  /* background-color: #1c1a25; */
-  background-color: #09080c;
-}
+
 .product_item_list a {
   text-decoration: none;
 }
@@ -971,9 +1108,9 @@ background: linear-gradient(277deg, rgba(0, 0, 0, 0.80) 0%, #362502 48.96%, rgba
   box-shadow: none;
 }
 .product_item_image {
-  width: 200px;
+  width: 240px;
   position: relative;
-  height: 270px;
+  height: 350px;
   margin: 10px 5px 0px 5px;
 }
 
@@ -3660,83 +3797,6 @@ textarea {
   }
   .topmovie .episodesl .swiper-slide:hover {
     transform: scale(1);
-  }
-}
-
-
-/* this is the loginPage css  */
-.LoginPage{
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  box-sizing: border-box;
-  background-image: url("../assets/loginPage/Rectangle 421.png");
-  display: flex;
-  justify-content: center;
-  padding-top: 5rem;
-}
-.LoginPage .LoginPageDetail{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center; 
-  align-items: center;
-  /* background-image: url("../assets/loginPage/Group 66870.png"); */
-  background: linear-gradient(320deg,rgba(25, 23, 21, 1) 74%, rgb(244, 4, 8));
-  border-radius: 1rem;
-  width:30vw;
-  /* height: auto; */
-  padding: 1rem;
-  height: 85vh;
-
-}
-.LoginPage .LoginPageDetail div{
-  margin-top: 30px;
-}
-.LoginPage .LoginPageDetail div button{
-  color: #fff;
-}
-.LoginPage .LoginPageDetail .LoginPageInput{
-  background-color: black;
-  color: white;
-  width:23rem;
-  padding:0.5rem;
-  margin:0.5rem;
-}
-.Authbutton .AuthLogin{
-  background-color: black;
-  padding: 0.8rem 1rem;
-  border-radius: 1rem;
-  margin: 0.5rem 1rem;
-}
- 
-/* this is for loginPage media Queary */
-@media screen and (max-width:913px) {
-  .LoginPage{
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    /* padding-top: 5rem; */
-  }
-  .LoginPage .LoginPageDetail{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center; 
-    align-items: center;
-    background: linear-gradient(320deg,rgba(25, 23, 21, 1) 74%, rgb(244, 4, 8));
-    /* border-radius: 1rem; */
-    width:100%;
-    height: auto;
-  }
-  .Authbutton .AuthLogin{
-    background-color: black;
-    padding: 0.8rem 1rem;
-    border-radius: 1rem;
-    margin: 1rem 1rem;
   }
 }
 

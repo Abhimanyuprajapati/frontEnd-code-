@@ -38,6 +38,7 @@ function Home({ data }) {
         arr.push({ name: key, value: result });
       }
     }
+    console.log(arr)
     setcontents(arr);
   };
   return (
@@ -47,8 +48,50 @@ function Home({ data }) {
       
       <Slider data={data.contents} /> {/*slider components goes here   */}
       {/* filmcity originals section goes here  */}
+
+
+{/*Dynamic Mapping based on category for filmcity originals */}
+{ contents.map((y,index)=>{
+        return (
+          <section className="product" key={index}>
+            <div className="product_category">
+              <div className="product_category_heading">
+                <h4>{y.name}</h4>
+              </div>
+              <div className="product_item_list">
+                {y.value.map((x, index) => {
+                  return (
+                    <div key={index}>
+                      <Link href={"/contents/" + `${x.title}`} className="product_item">
+                        <div className="product_item_image">
+                          <Image
+                            src={
+                              static_url +
+                              "/" +
+                              x.awsStaticResourcePath +
+                              "/" +
+                              x.portraitPosterIdNormal
+                            }
+                            alt="dd"
+                            width="200"
+                            height="300"
+                          />
+                          <div className="product_item_image_overlay">
+                            <div className="play_icon"></div>
+                          </div>
+                        </div>
+                        <p>{x.title}</p>
+                      </Link>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+        </section>
+        )
+      })}
+
       <section className="product">
-        <div className="container">
           <div className="product_category">
             <div className="product_category_heading">
               <h4>FILMCITY ORIGINALS</h4>
@@ -85,136 +128,6 @@ function Home({ data }) {
               })}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* romance section goes here  */}
-      <section className="product">
-        <div className="container">
-          <div className="product_category">
-            <div className="product_category_heading">
-              <h4>ROMANCE</h4>
-            </div>
-            <div className="product_item_list">
-              {data.contents.map((x, index) => {
-                return (
-                  <div key={index}>
-                    <Link
-                      href={"/contents/" + `${x.title}`}
-                      className="product_item"
-                    >
-                      <div className="product_item_image">
-                        <Image
-                          src={
-                            static_url +
-                            "/" +
-                            x.awsStaticResourcePath +
-                            "/" +
-                            x.portraitPosterIdNormal
-                          }
-                          alt="dd"
-                          width="200"
-                          height="300"
-                        />
-                        <div className="product_item_image_overlay">
-                          <div className="play_icon"></div>
-                        </div>
-                      </div>
-                      <p>{x.title}</p>
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Question />           {/*user related question components goes here  */}
-
-
-      {/* featured movies section goes here  */}
-      <section className="product">
-        <div className="container">
-          <div className="product_category">
-            <div className="product_category_heading">
-              <h4>FEATURED MOVIES</h4>
-            </div>
-            <div className="product_item_list">
-              {data.contents.map((x, index) => {
-                return (
-                  <div key={index}>
-                    <Link
-                      href={"/contents/" + `${x.title}`}
-                      className="product_item"
-                    >
-                      <div className="product_item_image">
-                        <Image
-                          src={
-                            static_url +
-                            "/" +
-                            x.awsStaticResourcePath +
-                            "/" +
-                            x.portraitPosterIdNormal
-                          }
-                          alt="dd"
-                          width="200"
-                          height="300"
-                        />
-                        <div className="product_item_image_overlay">
-                          <div className="play_icon"></div>
-                        </div>
-                      </div>
-                      <p>{x.title}</p>
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* webseries section goes here  */}
-      <section className="product">
-        <div className="container">
-          <div className="product_category">
-            <div className="product_category_heading">
-              <h4>WEB SERIES</h4>
-            </div>
-            <div className="product_item_list">
-              {data.contents.map((x, index) => {
-                return (
-                  <div key={index}>
-                    <Link
-                      href={"/contents/" + `${x.title}`}
-                      className="product_item"
-                    >
-                      <div className="product_item_image">
-                        <Image
-                          src={
-                            static_url +
-                            "/" +
-                            x.awsStaticResourcePath +
-                            "/" +
-                            x.portraitPosterIdNormal
-                          }
-                          alt="dd"
-                          width="200"
-                          height="300"
-                        />
-                        <div className="product_item_image_overlay">
-                          <div className="play_icon"></div>
-                        </div>
-                      </div>
-                      <p>{x.title}</p>
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
       </section>
     </div>
   );

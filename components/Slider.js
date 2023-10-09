@@ -1,14 +1,11 @@
 import React,{useEffect,useState} from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination,Navigation } from "swiper";
+import { Pagination,Navigation,Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Link from 'next/link';
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay , faPlus } from '@fortawesome/free-solid-svg-icons';
-import back1 from '../assets/image/Rectangle 1186.png';
 const static_url = process.env.NEXT_PUBLIC_CDN_STATIC;
 const Slider = ({data}) => {
   const [container,setContainer]=useState({title:'',description:'',awsStaticResourcePath:''})
@@ -24,25 +21,21 @@ const Slider = ({data}) => {
         setContainer(data[0])
       }
     },[])
-    const allPosters =[]
-    const appenddata=(e)=>{
-      setindex1(e.realIndex)
-      setContainer(data[e.realIndex])
-    }
+  
   return (
     <div className='banner'>
     <Swiper
-      className='desktop'
+      className='swiper'
       loop={true}
       slidesPerView={2}
+      //autoplay={{delay: 2000}}
       centeredSlides= {true}
       pagination={{
         clickable: true,
       }}
       navigation={true} 
-      modules={[Pagination,Navigation]}
+      modules={[Pagination,Navigation,Autoplay]}
       spaceBetween={50}
-      onSlideChange={(e) => appenddata(e)}
     >
       {data.map((x,index)=>{
         return(
@@ -54,8 +47,7 @@ const Slider = ({data}) => {
         )
       })}
     </Swiper>
-    </div>
-      
+    </div>    
   )
 }
 

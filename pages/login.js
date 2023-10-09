@@ -158,48 +158,25 @@ const Login = () => {
   return (
     <div className='login_page_css '>
       <h1>Login</h1>
-      <p>Please enter your phone number to continue with us</p>
-      <div>
-        <fieldset>
-          <legend>Phone Number</legend>
-          <input type='number' placeholder='+00 9874561230' className='LoginPageInput' /><br />
-        </fieldset>
-        <input type="password" onChange={handlepassword} placeholder="enter password" /><br />
-        <p>Forgot Password?</p>
+      <p style={{color:'orange',marginBottom:'1rem'}}>Please enter your phone number to continue with us</p>
+      <div className='loginmainDiv'>
+            <div className='login_page_Input'>
+              <p className='login_page_mainbox'>Phone Number *</p>
+              <input type='tel' placeholder='+00 9874561230' className='LoginPageInput' pattern="^([0-9]{10})$" maxLength="10"  /><br />
+            </div>
+            <div className='login_page_Input'>
+              <input type="password" onChange={handlepassword} placeholder="enter password" /><br />
+            </div>
+            <p>Forgot Password ?</p>
         <button>Login</button>
-        <p>or</p>
       </div>
-      <div className=''>
-        <button onClick={handlegoogleSignIn} className=''><Image src={google} width={20} height={20} style={{ marginRight: "0.7rem" }} /> Google</button>
-        <button onClick={handleFacebookSignIn} className=''><Image src={facebook} width={20} height={20} style={{ marginRight: "0.7rem" }} /> Facebook</button>
+      <p className='orMainLogin'>or</p>
+      <div>
+        <button onClick={handlegoogleSignIn} className='googleAuth'><Image src={google} width={50} height={50} style={{ marginRight: "0.7rem" }} /> Google</button>
+        <button onClick={handleFacebookSignIn} className='googleAuth'><Image src={facebook} width={50} height={50} style={{ marginRight: "0.7rem" }} /> Facebook</button>
       </div>
     </div>
   )
 }
 
 export default withRedirect(Login);
-
-
-// filmcity login code
-
-{/* <div className='LoginPage'>
-<div className='LoginPageDetail'>
-  <Image src={logo} alt="image"  width="100" height="100"/>
-  <h4 style={{color:"white"}}>Welcome to FILMCITY</h4>
-    <p style={{color:"rgba(154, 149, 141, 1)"}}>Please Sign Up or Login for a better experience.</p>
-    <h5 style={{color:"white"}}>Login / Register</h5>
-    <div className='Authbutton'>
-    <button  onClick={handleFacebookSignIn} className='AuthLogin'><Image src={facebook} width={20} height={20} style={{marginRight:"0.7rem"}}/> Facebook</button>
-    <button onClick={handlegoogleSignIn} className='AuthLogin'><Image src={google}  width={20} height={20} style={{marginRight:"0.7rem"}}/> Google</button>
-    </div>
-  </div>
-</div> */}
-
-{/*<input type='text' placeholder='Enter your phone number' className='LoginPageInput'/><br/>
-            <button style={{
-              background: "linear-gradient(276.9deg, #E11E25 0%, #F6AD1B 100%)",
-              width:"8rem",
-               padding:"0.5rem",
-               borderRadius:"1rem"
-               }}>Continue</button><br/>
-    <Image src={LoginOr} alt="image"/> <br/>*/}

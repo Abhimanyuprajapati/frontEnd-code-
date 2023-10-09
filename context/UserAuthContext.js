@@ -203,7 +203,7 @@ const refresh=()=>{
 const logout=()=>{
   signOut(auth);
   localStorage.clear()
-  router.push('/')
+  window.location.reload();
 }
 const login_with_otp=async(data)=>{
   return Instance.post('/loginWithOTP', data)
@@ -253,6 +253,7 @@ const verify = async (token) => {
     })
 }
 const userData =async(userId)=>{
+  console.log(userId)
   if(userId !== undefined){
     const data = {
       'userId':userId

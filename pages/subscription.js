@@ -3,6 +3,7 @@ import { useUserAuth } from '../context/UserAuthContext';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../assets/logo/jalwa.png';
+import subscriptionArrow from '../assets/image/Vector.png';
 import withSubscribe from '../components/Auth/Subscribe';
 import { useRouter } from 'next/router';
 const Subscription = () => {
@@ -27,31 +28,61 @@ const Subscription = () => {
 // )
 // } 
 // arrayData();
+// const [isHovering, setIsHovering] = useState(false);
+// const handleMouseOver = () => {
+//   setIsHovering(true);
+// };
+// const handleMouseOut = () => {
+//   setIsHovering(false);
+// };
+// {isHovering && (
+  // <p style={{color:'orange'}}>( Taxes are not included in this price )</p>)}
+  // onMouseOver={handleMouseOver}
+  // onMouseOut={handleMouseOut}
+
   return (
     <div className='subscriptionPage_css'>
-        <div>
-            <span><Image src={logo} alt="imd" width="50" height="50"/></span>
+        <div className='Currentsubscription'>
+            <span className='subscriptionLogo'><Image src={logo} alt="imd" width="auto" height="auto"/></span>
             <span>
-              <p>Current Subscription</p>
-              <p>Validity: 13 Jan 2021 - 14 Feb 2022</p>
+              <p className='currentSubscription1'>Current Subscription</p>
+              <p className='currentValidityDate'>Validity: 13 Jan 2021 - 14 Feb 2022</p>
             </span>
         </div>
-        <div>
-         {array.map((x, index) => {
-                return (
-                  <div>
-                    <div>
-                      <p>{x.name}</p>
-                      <p >1 Year Plan</p>
-                      <p>Validity {x.period} days</p>
-                    </div>
-                    <div>
-                      <p>₹{x.price[0].value / 100} </p>
-                      <button onClick={() => router.push(`/gateway/${x._id}`)}>Buy Now</button>
-                    </div>
-                  </div>
-                )
-         })}
+        <div className='subscriptionBuyPlan'>
+            <div className='BuyPlannow'>
+              
+              <hr/>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch Everywhere</p>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch All</p>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Unlimited Downloads</p>
+              <button onClick={() => router.push(`/gateway/${x._id}`)}>Subscribe Now</button>
+            </div>
+
+            <div  className='BuyPlannow'>
+              
+              <hr/>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch Everywhere</p>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch All</p>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Unlimited Downloads</p>
+              <button onClick={() => router.push(`/gateway/${x._id}`)}>Subscribe Now</button>
+            </div>
+            <div  className='BuyPlannow'>
+              
+              <hr/>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch Everywhere</p>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch All</p>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Unlimited Downloads</p>
+              <button onClick={() => router.push(`/gateway/${x._id}`)}>Subscribe Now</button>
+            </div>
+            <div  className='BuyPlannow'>
+              
+              <hr/>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch Everywhere</p>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch All</p>
+              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Unlimited Downloads</p>
+              <button onClick={() => router.push(`/gateway/${x._id}`)}>Subscribe Now</button>
+            </div>
         </div>
     </div>
   )
