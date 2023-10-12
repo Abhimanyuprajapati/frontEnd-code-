@@ -5,7 +5,7 @@ const static_url = process.env.NEXT_PUBLIC_CDN_STATIC;
 import { Access } from '../../services/context';
 import play from '../../assets/image/Group 66223.png';
 import play1 from '../../assets/image/playtrailer.png';
-import share from '../../assets/image/Invite_friend.png';
+
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
@@ -133,7 +133,7 @@ const Post = ({ data }) => {
                     <Image src={static_url + '/' + persons.awsStaticResourcePath + '/' + persons.landscapePosterIdSmall} alt="image" width="600" height="500" className='background' />
                     </div>
                     <div className='col-md-9'>
-                    <h1>{persons.title} <Image src={share} alt="imag" /> <span>14+</span></h1>
+                    <h1>{persons.title} <Image src={play} alt="imag" /> <span>14+</span></h1>
                     <ul>
                         <li>{persons.seasons.length} Seasons</li>
                         {persons.genre.map((x,index)=>{

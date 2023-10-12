@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useUserAuth } from '../../context/UserAuthContext'
-import { useRouter } from 'next/router'
-import play from '../../assets/image/download_app_2.png';
+import { useRouter } from 'next/router';
 import Image from 'next/image'
-import app from '../../assets/image/download_app_1.png';
 import withAuth from '../../components/Auth/Hoc'
-import logoutLogo from '../../assets/loginPage/Vector 3 (Stroke).png'
-import avatar from '../../assets/image/default-avatar.png'
+import avatar from '../../assets/image/avatar.png';
+import logo from '../../assets/logo/jalwa.png';
+import bottomline from '../../assets/image/bottomline.png';
+import editicon from '../../assets/image/edit.svg';
 const cdn = process.env.NEXT_PUBLIC_CDN_PROFILE;
 const Profile = () => {
   const { userData, logout } = useUserAuth();
@@ -71,42 +71,29 @@ const Profile = () => {
     setAnchorEl(null);
   };
   return (
-    <section className='profile'>
-        <div className='profileMain'>
-          <div>
-          {!permission ?
-            <Image src={col.profilePic !== '' ? avatar : avatar} alt="identifire" height='100' width='100' id="user" className='avatarOne' /> :
-            <Image src={col.profilePic !== '' ? col.profilePic : avatar} alt="identifire" height='100' width='100' id="user" className='avatarOne' />
-          }
-          </div>
-          {/* <div className='nameimg'>
-
-          </div> */}
-          <div>
-          <p className='username'> {col.name ? col.name : col.mobile}
-           {!permission ? <i className='fa fa-cog' onClick={handleClick} style={{ 'paddingLeft': '10px', 'fontSize': '18px', 'cursor': 'pointer' }}></i> : ''}
-           </p>
-           <p className='userGmail'>{col.email}</p>
-          </div>
-          <div>
-          {flag ?
-           <p style={{ 'lineHeight': '50px' }} className='userBuyPlan'>Subscription Till- <span className="SubscriptionBuyPlan">{end}</span> <br /></p> :
-           <p className='userBuyPlan'>Account Type - Free <span className="SubscriptionBuyPlan"><a href='/subscription' className='ChangeAnchorColor'>Buy Plan</a></span></p>
-         }
-         
-          </div> 
-          <hr />
-         <h3 className='profileHeader'>Download Our App For Better Experience</h3>
-         <div className='images'>
-           <a target="_blank" href="#"><Image className='playstore' src={play} alt="ff" width="auto" height="auto" /></a>
-           <a target="_blank" href="#"><Image className='playstore' src={app} alt="ff" width="auto" height="auto" /></a>
-         </div>
-         <div >
-         <p className='LogoutOne' onClick={() => { logout(); setloader(true) }}>Logout  {" "}<Image src={logoutLogo}/></p>
-         </div>
-       
-        </div>
-    </section>
+  <div className='profile'>
+    <div className='profile-child'>
+      <div className='pcup'>
+      <Image src={avatar} alt='avatar'/>
+      <Image src={editicon} alt="a" className='editicon'/>
+      <div className='pcup1'>
+        <input type='text' disabled value={col.email}/>
+        <input type='text' disabled value={col.name}/>
+      </div>
+      </div>
+      <div className='Currentsubscription'>
+              <span className='subscriptionLogo'><Image src={logo} alt="imd" width="auto" height="auto"/></span>
+              <span>
+                <p className='currentSubscription1'>Current Subscription</p>
+                {flag ?
+                <p className='currentValidityDate'>Subscription Validity - <span className="SubscriptionBuyPlan">{end}</span> <br /></p> :
+                <p className='currentValidityDate'>Account Type - Free <span className="SubscriptionBuyPlan"><a href='/subscription' className='ChangeAnchorColor'>Buy Plan</a></span></p>
+                }
+              </span>
+      </div>
+    </div>
+    <Image src={bottomline} alt="btnline"/>
+  </div>
   )
 }
 export default withAuth(Profile)

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import { useUserAuth } from '../context/UserAuthContext';
-import logo from '../assets/logo/FilmCity.png';
+import logo from '../assets/logo/jalva.png';
 import Question from '../components/Contents/Question';
 import Quote from '../components/Contents/Quote';
 import withState from '../components/Auth/State';

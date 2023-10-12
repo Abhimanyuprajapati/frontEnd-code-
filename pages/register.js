@@ -8,7 +8,7 @@ import emmail from '../assets/image/input_field_email.png';
 import user from "../assets/image/input_field_user.png";
 import password from "../assets/loginPage/lock.png";
 import EyePassword from "../assets/loginPage/mail.png"
-import logo from '../assets/logo/kangan.png';
+// import logo from '../assets/logo/kangan.png';
 import { useUserAuth } from '../context/UserAuthContext';
 import { useRouter } from 'next/router';
 import ReCAPTCHA from 'react-google-recaptcha'
@@ -22,8 +22,8 @@ const register = () => {
     const [emailinput, setemail] = useState('')
     const [passwordinput, setpassword] = useState('')
     const [confirmp, setconfirmp] = useState('')
-    const [gender, setgender] = useState('')
-    const [dob, setdob] = useState({})
+    // const [gender, setgender] = useState('')
+    // const [dob, setdob] = useState({})
     const [check, setcheck] = useState(false)
     const [usercheck, setusercheck] = useState(true)
     const [number, setnumber] = useState('')
@@ -163,38 +163,19 @@ const register = () => {
         }
     }
     return (
-        <>
             <div className='RegisterPage'>
                 <div className='registerMain'>
-                    <h2 style={{ color: "white" }}>Register</h2>
-                    <p style={{ color: "rgba(154, 149, 141, 1)" }}>Please enter your details to register</p>
                     <form onSubmit={register}>
-                        <small className='small'>{em}</small>
-                        <div className="registerInput">
-                            <input type="text" onChange={handleuser} placeholder="Enter Your Email" />
-                        </div>
                         <small className='small'>{alert_name}</small>
                         <div className="registerInput">
-                            <input type="text" onChange={handlename} placeholder="Enter Your Full Name *" name="" />
-                        </div>
+                            <input type="text" onChange={handlename} placeholder="Magdalina Kubica *" name="" />
+                        </div> 
 
-                        <div className='selecterDateGender'>
-                            <div>
-                                <small className='small'>{alert_dob}</small>
-                                <div className='selecterMobile'>
-                                    <input type="date" className='selecterDate' onChange={handledate} name="date" />
-                                </div>
-                            </div>
-                            <div className='selecterGender'>
-                                <select name="gender" className='selecterDate' onChange={handlegenre}>
-                                    <option value="">Select Gender</option>
-                                    <option value="female">Female</option>
-                                    <option value="male">Male</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
+                        <small className='small'>{em}</small>
+                        <div className="registerInput">
+                            <input type="text" onChange={handleuser} placeholder="Email Address" />
                         </div>
-                       
+                             
                         <small className='small'>{passwordalert.pass}</small>
                         <div className="registerInput">
                             <input type="password"  onChange={handlepassword} placeholder="Create Password *" name="" />
@@ -207,119 +188,13 @@ const register = () => {
                             <span className="lockerPassword"><Image src={EyePassword} alt="lock" /></span>
                         </div>
 
-                        <p style={{ color: "white" }}>By proceeding you agree to our  <Link href="/termsandcondition" style={{textDecoration:"none"}}><span style={{ color: "rgba(255, 168, 0, 1)"}}>Terms of Use </span></Link>and <Link href="/privacypolicy" style={{textDecoration:"none"}}><span style={{ color: "rgba(255, 168, 0, 1)" }}>Privacy Policy</span></Link></p>
-                        <input type="submit" value="REGISTER"  className='registerSubmit'/>
+                        <div className='ReisterButtonDiv'>
+                            <p style={{ color: "white" }}>I confirm that I am over 18+ and I agree to the  <Link href="/termsandcondition" style={{textDecoration:"none"}}><span style={{ color: "rgba(255, 168, 0, 1)"}}>Terms of Use </span></Link>and <Link href="/privacypolicy" style={{textDecoration:"none"}}><span style={{ color: "rgba(255, 168, 0, 1)" }}>Privacy Policy</span></Link></p>
+                            <input type="submit" value="REGISTER NOW"  className='registerSubmit'/>
+                        </div>
                     </form>
                 </div>
             </div>
-        </>
     )
 }
 export default withRedirect(register)
-
-
-
-
-
-//old code of kanganweb
-
-// <section className="login">
-// <div className={loader ? 'loader' : 'loader hide'}>
-//     <div className='spin' />
-// </div>
-// <div className="login_form left">
-//     <div className="login_form_area">
-//         <div className="login_inner_area">
-//             <Link href="/" className="back_home"><i className='fa fa-arrow-left' style={{ 'color': '#fff' }}></i></Link>
-//             {flag_indicator ? ui_msg : ''}
-//             <form onSubmit={register}>
-//                 <div className="input_field_area">
-//                     <div>
-//                         <small className='small'>{alert_name}</small>
-//                         <div className="input_field_col">
-//                             <span><Image src={user} alt="" /></span><input type="text" onChange={handlename} placeholder="Enter Your Full Name *" name="" />
-//                         </div>
-//                         <small className='small'>{em}</small>
-//                         <div className="input_field_col">
-//                             <span><Image src={emmail} alt="" /></span>
-//                             <input type="text" onChange={handleuser} placeholder="Enter Your Email or Contact Number" />
-//                         </div>
-//                     </div>
-
-
-//                     <div>
-//                         <small className='small'>{alert_dob}</small>
-//                         <div className="input_field_col">
-//                             <span><Image src={emmail} alt="" /></span>
-//                             <input type="date" className="form-control" onChange={handledate} name="" />
-//                         </div>
-//                         <div className="input_field_col  mb-3" style={{ 'display': 'inline-flex' }}>
-//                             <div className="form-check">
-//                                 <input className="form-check-input" name="gender" id="M" type="radio" value="M" onChange={handlegenre} />
-//                                 <label className="form-check-label">
-//                                     Male
-//                                 </label>
-//                             </div>
-//                             <div className="form-check" style={{ 'marginLeft': '10px' }}>
-//                                 <input className="form-check-input" name="gender" id="F" type="radio" value="F" onChange={handlegenre} />
-//                                 <label className="form-check-label">
-//                                     Female
-//                                 </label>
-//                             </div>
-
-//                         </div>
-//                         <small className='small'>{passwordalert.pass}</small>
-//                         <div className="input_field_col">
-//                             <span><Image src={password} alt="" /></span><input type="password" className="form-control" onChange={handlepassword} placeholder="Create Password *" name="" />
-//                         </div>
-//                         <small className='small'>{passwordalert.match}</small>
-//                         <div className="input_field_col">
-//                             <span><Image src={password} alt="" /></span><input type="password" className="form-control" onChange={handleconfirmpassword} placeholder="Confirm Password *" name="" />
-//                         </div>
-//                     </div>
-//                     <ReCAPTCHA className='recap' sitekey={SITE_KEY} onChange={handler} />
-//                     <br />
-//                     <div className="input_field_col">
-//                         <div className="new">
-//                             <small className='small'>{msg}</small><br />
-//                             <div className="form-group">
-//                                 <input type="checkbox" onChange={handle} value={check} id="html" />
-//                                 <label style={{ 'marginLeft': '10px' }}>I Accept All<span> Terms  Conditions</span></label>
-//                             </div>
-//                             {flag ?
-//                                 <input type="submit" value="REGISTER" name="" /> :
-//                                 <input type="submit" value="REGISTER" disabled name="" />
-//                             }
-//                         </div>
-//                         <br /><br /><br />
-
-//                     </div>
-//                 </div>
-//             </form>
-
-//             <div className="or_devider"><span>OR</span></div>
-//             <ul className="social_connect">
-//                 <li><Link href="/" onClick={handleFacebookSignIn}><span><Image src={facebook} alt="" /></span> Facebook</Link></li>
-//                 <li><Link href="/" onClick={handleGoogleSignIn}><span><Image src={google} alt="" /></span> Google</Link></li>
-//             </ul>
-//         </div>
-//     </div>
-// </div>
-// <div className="logincontent right">
-//     <div className="content_area">
-//         <div className="content_inner_area">
-//             <Link href="/" className="login_logo"><Image src={logo} alt="ff" width="200" height="200" /></Link>
-//             <ul>
-//                 <li>New web series release every week</li>
-//                 <li>Unlimited streaming</li>
-//                 <li>HD + (2k) Qualtiy</li>
-//                 <li>Get full access to all premium content</li>
-//             </ul>
-//             <h3>Already Have An Account?</h3>
-//             <div className="flip_btn_area">
-//                 <Link href="/login" className="flip_btn">LOGIN NOW</Link>
-//             </div>
-//         </div>
-//     </div>
-// </div>
-// </section>

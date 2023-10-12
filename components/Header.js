@@ -34,8 +34,9 @@ const Header = ({state}) => {
     }else{
       setsubscribe(true)
     }
-    console.log(userId,subflag)
-    getData(id);
+    if(id){
+      getData(id);
+    }
   },[])
 
   const getData=async(userId)=>{
@@ -75,6 +76,7 @@ const Header = ({state}) => {
       
           <ul>
             <li>All</li>
+            {flag ? <li><Link href={`/profile/${userId}`}>My Account</Link></li>:''}
             <li><Link href="/">Home</Link></li>
             <li><Link href="/search">Search</Link></li>
             <li><Link href="/upcoming">Upcoming</Link></li>
@@ -98,7 +100,7 @@ const Header = ({state}) => {
       {!flag  ?
       <Image src={install} alt="install-btn" className='install'/>:
       <div className='topnav up'>
-      <Image src={avatar} width={50} height={50} style={{'borderRadius':'50%'}}/>
+      <Image src={avatar} width={50} height={50} style={{'borderRadius':'50%'}} onClick={()=>router.push(`/profile/${userId}`)}/>
       <div className='in'>
       <p>{user.name}</p>
       <p>{user.email}</p>

@@ -165,6 +165,7 @@ const Login = () => {
               <input type='tel' placeholder='+00 9874561230' className='LoginPageInput' pattern="^([0-9]{10})$" maxLength="10"  /><br />
             </div>
             <div className='login_page_Input'>
+            <p className='login_page_mainbox'>Password *</p>
               <input type="password" onChange={handlepassword} placeholder="enter password" /><br />
             </div>
             <p>Forgot Password ?</p>

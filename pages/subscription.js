@@ -3,24 +3,27 @@ import { useUserAuth } from '../context/UserAuthContext';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../assets/logo/jalwa.png';
-import subscriptionArrow from '../assets/image/Vector.png';
+import subscriptionArrow from '../assets/loginPage/right.png';
 import withSubscribe from '../components/Auth/Subscribe';
+import rs from '../assets/loginPage/rupis.png';
 import { useRouter } from 'next/router';
 const Subscription = () => {
   const router = useRouter()
-  const { allSubscriptions } = useUserAuth();
+  const { allSubscriptions} = useUserAuth();
   const [array, setarray] = useState([])
   useEffect(() => {
-    const pack = async () => {
-      setloader(true)
-      const data = await allSubscriptions()
-      setarray(data)
-      if (data) {
-        setloader(false)
-      }
-    }
     pack()
   }, [])
+
+  const pack = async () => {
+    setloader(true)
+    const data = await allSubscriptions()
+    console.log(data)
+    setarray(data)
+    if (data) {
+      setloader(false)
+    }
+  }
   const [loader, setloader] = useState(false);
 
 // const arrayData =()=>{
@@ -42,47 +45,21 @@ const Subscription = () => {
 
   return (
     <div className='subscriptionPage_css'>
-        <div className='Currentsubscription'>
-            <span className='subscriptionLogo'><Image src={logo} alt="imd" width="auto" height="auto"/></span>
-            <span>
-              <p className='currentSubscription1'>Current Subscription</p>
-              <p className='currentValidityDate'>Validity: 13 Jan 2021 - 14 Feb 2022</p>
-            </span>
-        </div>
         <div className='subscriptionBuyPlan'>
-            <div className='BuyPlannow'>
-              
-              <hr/>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch Everywhere</p>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch All</p>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Unlimited Downloads</p>
-              <button onClick={() => router.push(`/gateway/${x._id}`)}>Subscribe Now</button>
-            </div>
-
-            <div  className='BuyPlannow'>
-              
-              <hr/>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch Everywhere</p>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch All</p>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Unlimited Downloads</p>
-              <button onClick={() => router.push(`/gateway/${x._id}`)}>Subscribe Now</button>
-            </div>
-            <div  className='BuyPlannow'>
-              
-              <hr/>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch Everywhere</p>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch All</p>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Unlimited Downloads</p>
-              <button onClick={() => router.push(`/gateway/${x._id}`)}>Subscribe Now</button>
-            </div>
-            <div  className='BuyPlannow'>
-              
-              <hr/>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch Everywhere</p>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Watch All</p>
-              <p><Image src={subscriptionArrow} alt="imd" width="auto" height="auto"/> Unlimited Downloads</p>
-              <button onClick={() => router.push(`/gateway/${x._id}`)}>Subscribe Now</button>
-            </div>
+          {array.map((x,index)=>{
+            return (
+              <div className='BuyPlannow' key={index}>
+                <h2><span className='price'><Image src={rs} /> {x.price[0].value/100}</span> {x.period} Days</h2>
+                <hr/>
+                {x.benefits.map((y,index)=>{
+                  return (
+                    <p key={index}><Image src={subscriptionArrow} style={{'margin':'0 5px'}} alt="imd" width="10" height="10"/> {y}</p>
+                )})}
+                <button onClick={() => router.push(`/gateway/${x._id}`)}>Subscribe Now</button>
+              </div>
+            )
+          })}
+            
         </div>
     </div>
   )

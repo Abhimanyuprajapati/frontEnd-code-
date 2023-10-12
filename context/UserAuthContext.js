@@ -274,6 +274,14 @@ const isLoggedIn=async()=>{
     return false
   }
 } 
+const isSubscribed = async()=>{
+  const subflag = localStorage.getItem('subscribed');
+  if(subflag !== null){
+    return true;
+  }else{
+    return false;
+  }
+}
 const ChangePassword = async (data) => {
   return Access.post('/changePassword', data).then(res => {
     return res.data
@@ -305,7 +313,8 @@ const ChangePassword = async (data) => {
         Signup,
         verify,
         ChangePassword,
-        login_with_whatsapp
+        login_with_whatsapp,
+        isSubscribed
       }}
     >
       {children}
