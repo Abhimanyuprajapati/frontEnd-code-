@@ -132,6 +132,8 @@ function Home({ data }) {
             </div>
           </div>
       </section>
+      <br/>
+      <br/>
     </div>
   );
 }

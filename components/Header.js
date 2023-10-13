@@ -104,7 +104,7 @@ const Header = ({state,toggle}) => {
           <Image src={link} alt='logol'/>
           <Image src={twitter} alt='logot'/>
           </div>
-      </div>
+        </div>
       {!flag  ?
       <Image src={install} alt="install-btn" className='install'/>:
       <div className='topnav up'>

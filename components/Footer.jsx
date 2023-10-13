@@ -13,19 +13,19 @@ const Footer = forwardRef(({
     <div className='FooterMain' ref={ref}>
         <div className='FooterOption'>
             <Link href="/" className='FooterHome'>
-                <div><Image src={homeLogo} alt="home" className='LogoFooter'/></div>
+                <div><Image src={homeLogo} alt="home" width="auto" height="auto" className='LogoFooter'/></div>
                 <div>Home</div>
             </Link>
-            <Link href="/subscription" className='FooterReels'>
-                <div><Image src={homeReels} alt="Reels" width="auto" height="auto"/></div>
+            <Link href="/subscription" className='FooterHome'>
+                <div><Image src={homeReels} alt="Reels" width="auto" height="auto" className='LogoFooter'/></div>
                 <div>Subscription</div>
             </Link>
-            <Link href="/upcoming" className='FooterUpcoming'>
-                <div><Image src={homeUpcoming} alt="Upcoming" width="auto" height="auto"/></div>
+            <Link href="/upcoming" className='FooterHome'>
+                <div><Image src={homeUpcoming} alt="Upcoming" width="auto" height="auto" className='LogoFooter'/></div>
                 <div>Upcoming</div>
             </Link>
-            <Link href="#" className='FooterMore' onClick={more}>
-                <div><Image src={homeMore} alt="More" width="auto" height="auto"/></div>
+            <Link href="#" className='FooterHome' onClick={more}>
+                <div><Image src={homeMore} alt="More" width="auto" height="auto" className='LogoFooter'/></div>
                 <div>More</div>
             </Link>
         </div>

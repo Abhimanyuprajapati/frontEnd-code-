@@ -36,7 +36,7 @@ const Slider = ({data}) => {
       }}
       navigation={true} 
       modules={[Pagination,Navigation,Autoplay]}
-      spaceBetween={80}
+      spaceBetween={flag ? 0:80}
     >
       {data.map((x,index)=>{
         return(

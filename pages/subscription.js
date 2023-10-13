@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useUserAuth } from '../context/UserAuthContext';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../assets/logo/jalwa.png';
 import subscriptionArrow from '../assets/loginPage/right.png';
 import withSubscribe from '../components/Auth/Subscribe';
 import rs from '../assets/loginPage/rupis.png';
