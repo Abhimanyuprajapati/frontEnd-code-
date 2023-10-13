@@ -8,14 +8,17 @@ import "swiper/css/navigation";
 import Download from '../components/Contents/Download';
 import Question from "../components/Contents/Question";
 import Topmovie from "../components/Contents/Topmovie";
+import small from "../assets/loginPage/small.png";
 //server side redenring
 import Slider from "../components/Slider";
 import withState from "../components/Auth/State";
+import Footer from "../components/Footer";
 
 const static_url = process.env.NEXT_PUBLIC_CDN_STATIC;
 function Home({ data }) {
   //client side data fetching
   const [contents, setcontents] = useState([]);
+  const [view,setview]=useState(false)
   useEffect(() => {
     console.log(data)
     callback(data.contents);
@@ -56,7 +59,7 @@ function Home({ data }) {
           <section className="product" key={index}>
             <div className="product_category">
               <div className="product_category_heading">
-                <h4>{y.name}</h4>
+                <h4><Image src={small}/> {y.name}</h4>
               </div>
               <div className="product_item_list">
                 {y.value.map((x, index) => {
@@ -94,7 +97,7 @@ function Home({ data }) {
       <section className="product">
           <div className="product_category">
             <div className="product_category_heading">
-              <h4>FILMCITY ORIGINALS</h4>
+              <h4><Image src={small}/> FILMCITY ORIGINALS</h4>
             </div>
             <div className="product_item_list">
               {data.contents.map((x, index) => {

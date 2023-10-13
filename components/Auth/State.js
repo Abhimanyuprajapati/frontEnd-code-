@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header";
+import Footer from "../Footer";
 // import Footer from "../Footer";
 import { useUserAuth } from "../../context/UserAuthContext";
 const withState =Component=> {
@@ -7,6 +8,7 @@ const withState =Component=> {
     // Login data added to props via redux-store (or use react context for example)
     const {isLoggedIn}=useUserAuth();
     const [state ,setstate]=useState(false)
+    const [toggle ,settoggle]=useState(false)
     useEffect(()=>{
       isLoggedIn().then(res=>{
         if(res === true){
@@ -14,13 +16,13 @@ const withState =Component=> {
         }
         //Router.replace('/login')
     })
-    })
+    },[])
     
     return (
       <div className="outer">
-      <Header state={state}/>
+      <Header state={state} toggle={toggle}/>
       <Component {...props} />
-      {/* <Footer/> */}
+      <Footer more={()=>settoggle(!toggle)}/>
       </div>
     );
   };

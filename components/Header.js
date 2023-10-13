@@ -14,7 +14,7 @@ import insta from '../assets/new image/home/instagram.png';
 import link from '../assets/new image/home/linkedin.png';
 import face from '../assets/new image/home/facebook.png';
 import you from '../assets/new image/home/Vector.png';
-const Header = ({state}) => {
+const Header = ({state,toggle}) => {
   const {userData,logout} = useUserAuth();
   const [flag,setflag]=useState(false)
   const [navbar,setNavbar]=useState(false)
@@ -38,7 +38,6 @@ const Header = ({state}) => {
       getData(id);
     }
   },[])
-
   const getData=async(userId)=>{
     const res = await userData(userId);
     if(!res.data.error){
@@ -52,6 +51,15 @@ const Header = ({state}) => {
   const open=()=>{
     document.getElementsByClassName('sidenav')[0].style.width = "300px";
   }
+  useEffect(()=>{
+    if(toggle){
+      open()
+    }else{
+      close()
+    }
+  },[toggle])
+    
+
   return (
     <div className="header">
       <Image src={vector} alt="menu" className='menubar' onClick={open}/>

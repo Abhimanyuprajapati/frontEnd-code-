@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import Router from "next/router";
 import Header from "../Header";
+import Footer from "../Footer";
 // import Footer from "../Footer";
 import { useUserAuth } from "../../context/UserAuthContext";
 const withSubscribe=Component=> {
@@ -8,6 +9,7 @@ const withSubscribe=Component=> {
     // Login data added to props via redux-store (or use react context for example)
     const {isLoggedIn}=useUserAuth();
     const [state ,setstate]=useState(false)
+    const [toggle ,settoggle]=useState(false)
     useEffect(()=>{
     const subs = localStorage.getItem('subscribed');
     if (subs === null || subs === undefined) {
@@ -26,9 +28,9 @@ const withSubscribe=Component=> {
     // If user is logged in, return original component
     return (
       <div className="outer">
-      <Header state={state}/>
+     <Header state={state} toggle={toggle}/>
       <Component {...props} />
-      {/* <Footer/> */}
+      <Footer more={()=>settoggle(!toggle)}/>
       </div>
     );
   };

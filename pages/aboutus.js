@@ -44,8 +44,8 @@ const Aboutus = () => {
         <h1>About Us</h1>
         <h5>Get hooked to binge-worthy content</h5>
         <h5>tailored to your taste in your language!</h5>
-        <p>Ullu is a video streaming service that offers a wide variety of genres from drama, horror, suspense, thriller to comedy & beyond. 
-            Binge watch from our collection of web series, movies, Ullu Originals and more in your regional language. 
+        <p>Jalva is a video streaming service that offers a wide variety of genres from drama, horror, suspense, thriller to comedy & beyond. 
+            Binge watch from our collection of web series, movies, Jalva Originals and more in your regional language. 
             Start a Free Trial and your first 2 videos will be on us. 
             Enjoy unlimited video streaming and downloads at a pocket friendly price all year long.
         </p>

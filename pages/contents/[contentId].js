@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router';
-import Header from '../../components/Header';
 const static_url = process.env.NEXT_PUBLIC_CDN_STATIC;
 import { Access } from '../../services/context';
-import play from '../../assets/image/Group 66223.png';
-import play1 from '../../assets/image/playtrailer.png';
-
+// import play from '../../assets/image/Group 66223.png';
+import Download from '../../assets/loginPage/Download.png'
+import Watchlist from '../../assets/loginPage/icomoon-free_download2.png'
+import share from '../../assets/loginPage/icomoon-free_download2 (1).png'
 import Image from 'next/image';
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Link from 'next/link';
-import Select from 'react-select';
-import Download from '../../components/Contents/Download';
 import withState from '../../components/Auth/State';
 export async function getServerSideProps(context) {
     // Fetch data from external API
@@ -89,6 +87,7 @@ const Post = ({ data }) => {
     const validate = (res) => {
         for (var i = 0; i < res.length; i++) {
             if (res[i].title == contentId) {
+                console.log(res[i])
                 if (res[i].categoryName === 'Movies' || res[i].categoryName === 'movies') {
                     setflag_movie(true)
                 }
@@ -124,121 +123,120 @@ const Post = ({ data }) => {
             </div>
             <section className='content-details'>
                 <div className='contentchild-2'>
-                    <Image src={static_url + '/' + persons.awsStaticResourcePath + '/' + persons.landscapePosterIdNormal} alt="image" width="600" height="500" className='background' />
-                    <Image src={play} alt="image" width="300" height="200" className='bigplaybtn' onClick={() => { router.push(`/player/data?title=${persons.title}&path=${persons.trailerFileUrl}&type=trailer&contentId=${persons._id}`); setloader(true) }} />
+                <Image src={static_url + '/' + persons.awsStaticResourcePath + '/' + persons.portraitPosterIdNormal} alt="image"  width="300" height="400" className='smallbackground' />
+                <Image src={static_url + '/' + persons.awsStaticResourcePath + '/' + persons.landscapePosterIdNormal} alt="image" width="920" height="550" className='background' />
+                {/* <Image src={play} alt="image" width="300" height="200" className='bigplaybtn' onClick={() => { router.push(`/player/data?title=${persons.title}&path=${persons.trailerFileUrl}&type=trailer&contentId=${persons._id}`); setloader(true) }} /> */}
                 </div>
                 <div className='contentchild-1'>
-                    <div className='contentinnerchild'>
-                    <div className='col-md-3'>
-                    <Image src={static_url + '/' + persons.awsStaticResourcePath + '/' + persons.landscapePosterIdSmall} alt="image" width="600" height="500" className='background' />
-                    </div>
-                    <div className='col-md-9'>
-                    <h1>{persons.title} <Image src={play} alt="imag" /> <span>14+</span></h1>
-                    <ul>
-                        <li>{persons.seasons.length} Seasons</li>
-                        {persons.genre.map((x,index)=>{
-                            return (
-                                <li key={index}>{x}</li>
-                            )
-                        })}
-                    </ul>
-                    <p>{persons.description}</p>
-                    <p>Director :{persons.director}</p>
-                    <p>Casts :{persons.actors.map((x,index)=>{
-                        return (
-                            <span key={index}>{x}</span>
-                        )
-                    })}</p>
-                    <Image src={play1} alt="trailer_button" onClick={() => { router.push(`/player/data?title=${persons.title}&path=${persons.trailerFileUrl}&type=trailer&contentId=${persons._id}`); setloader(true) }}/>
-                    </div>
-                    </div>
-                    
-                    <div className='topmovie'>
-                            <Select
-                                className='select'
-                                value={selectedOption}
-                                onChange={handle}
-                                options={options}
-                            />
-                            <div className='head'>
-                                <h2>Episodes</h2>
-                                <p> {index1 + 1} /{child.episodes.length} </p>
+                    <div className='contentchild-2'>
+                        <div className='contentchild-3'>
+                            <h1>{persons.title}</h1>
+                        </div>
+                        <div className='contentchild-4'>
+                            <div className='contentchild-5' style={{color:'rgba(246, 173, 27, 1)'}}>
+                                <Image src={Download} alt="play" width="auto" height="auto" />
+                                Download
                             </div>
-                            {!flag ? <p>No episodes !!</p> :
-                                <Swiper
-                                    className='episodesl'
-                                    loop={false}
-                                    slidesPerView={flag1 ? 2 : 5}
-                                    pagination={{
-                                        clickable: true,
-                                    }}
-                                    navigation={true}
-                                    modules={[Pagination, Navigation]}
-                                    spaceBetween={5}
-                                    onSlideChange={(e) => appenddata(e)}
-                                >
-                                    {child.episodes.map((x, index) => {
-                                        return (
-                                            <SwiperSlide key={index} >
-                                                <Link href={`/player/data?title=${x.name}&contentId=${persons._id}&episodeId=${x._id}&contentTitle=${contentId}&userId=${userId}&type=episode`}>
-                                                    <p>{index + 1}</p>
-                                                    <Image src={static_url + '/' + awsresourceId + '/' + x.landscapePosterId} alt="sldi" width="260" height="165" style={{ 'borderRadius': '12px' }} />
-                                                    <h2 style={{ 'fontSize': '16px', 'color': '#fff', 'margin': '10px' }}>{x.name}</h2>
-                                                </Link>
-                                            </SwiperSlide>
-                                        )
-                                    })}
-                                </Swiper>
-                            }
+                            <div className='contentchild-5'>
+                                <Image src={Watchlist} alt="image" width="auto" height="auto" />
+                                Watchlist
+                            </div>
+                            <div className='contentchild-5'>
+                                <Image src={share} alt="image" width="auto" height="auto" />&nbsp;
+                                Share
+                            </div>
+                        </div>
+                    </div>
+                    <div className='contentchild-8'>
+                        <p>{persons.description}</p>
                     </div>
                 </div>
-
             </section>
-            {/*seasons and episodes*/}
-    
-            <Download />     {/* download section */}
-      {/* featured and upcoming movies section  */}
-      <section className="product">
-        <div className="container">
-          <div className="product_category">
-            <div className="product_category_heading">
-              <h4>FEATURED MOVIES</h4>
-            </div>
-            <div className="product_item_list">
-              {data.contents.map((x, index) => {
-                return (
-                  <div key={index}>
-                    <Link
-                      href={"/contents/" + `${x.title}`}
-                      className="product_item"
-                    >
-                      <div className="product_item_image">
-                        <Image
-                          src={
-                            static_url +
-                            "/" +
-                            x.awsStaticResourcePath +
-                            "/" +
-                            x.portraitPosterIdNormal
-                          }
-                          alt="dd"
-                          width="200"
-                          height="300"
-                        />
-                        <div className="product_item_image_overlay">
-                          <div className="play_icon"></div>
+            {/* New and Fresh TV Shows section  */}
+            <section className="product">
+                <div className="container">
+                    <div className="product_category">
+                        <div className="product_category_heading">
+                            <h4>New and Fresh TV Shows</h4>
+                            <h4 style={{color:'rgba(246, 173, 27, 1)'}}>View All</h4>
                         </div>
-                      </div>
-                      <p>{x.title}</p>
-                    </Link>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
+                        <div className="product_item_list">
+                            {data.contents.map((x, index) => {
+                                return (
+                                    <div key={index}>
+                                        <Link
+                                            href={"/contents/" + `${x.title}`}
+                                            className="product_item"
+                                        >
+                                            <div className="product_item_image">
+                                                <Image
+                                                    src={
+                                                        static_url +
+                                                        "/" +
+                                                        x.awsStaticResourcePath +
+                                                        "/" +
+                                                        x.portraitPosterIdNormal
+                                                    }
+                                                    alt="dd"
+                                                    width="200"
+                                                    height="300"
+                                                />
+                                                <div className="product_item_image_overlay">
+                                                    <div className="play_icon"></div>
+                                                </div>
+                                            </div>
+                                            <p>{x.title}</p>
+                                        </Link>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </section>
+ {/* What Genre you want to watch section  */}
+            <section className="product">
+                <div className="container">
+                    <div className="product_category">
+                        <div className="product_category_heading">
+                            <h4>What Genre you want to watch ?</h4>
+                            <h4 style={{color:'rgba(246, 173, 27, 1)'}}>View All</h4>
+                        </div>
+                        <div className="product_item_list">
+                            {data.contents.map((x, index) => {
+                                return (
+                                    <div key={index}>
+                                        <Link
+                                            href={"/contents/" + `${x.title}`}
+                                            className="product_item"
+                                        >
+                                            <div className="product_item_image">
+                                                <Image
+                                                    src={
+                                                        static_url +
+                                                        "/" +
+                                                        x.awsStaticResourcePath +
+                                                        "/" +
+                                                        x.portraitPosterIdNormal
+                                                    }
+                                                    alt="dd"
+                                                    width="200"
+                                                    height="300"
+                                                />
+                                                <div className="product_item_image_overlay">
+                                                    <div className="play_icon"></div>
+                                                </div>
+                                            </div>
+                                            <p>{x.title}</p>
+                                        </Link>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
-export default withState(Post) 
+export default withState(Post)

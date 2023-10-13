@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Link from 'next/link';
 import Image from 'next/image';
+
 const static_url = process.env.NEXT_PUBLIC_CDN_STATIC;
 const Slider = ({data}) => {
   const [container,setContainer]=useState({title:'',description:'',awsStaticResourcePath:''})
@@ -35,13 +36,13 @@ const Slider = ({data}) => {
       }}
       navigation={true} 
       modules={[Pagination,Navigation,Autoplay]}
-      spaceBetween={50}
+      spaceBetween={80}
     >
       {data.map((x,index)=>{
         return(
           <SwiperSlide key={index} >
             <Link href={'/contents/'+`${x.title}`} >
-            <Image src={static_url +'/' +x.awsStaticResourcePath +'/'+x.landscapePosterIdNormal} alt="sldi" width="200" height="150"/>
+            <Image src={static_url +'/' +x.awsStaticResourcePath +'/'+x.landscapePosterIdNormal} alt="sldi" width="1920" height="1080"/>
             </Link>
           </SwiperSlide>
         )

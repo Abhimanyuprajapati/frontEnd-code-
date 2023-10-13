@@ -3,6 +3,7 @@ import Router from "next/router";
 import Header from "../Header";
 // import Footer from "../Footer";
 import { useUserAuth } from "../../context/UserAuthContext";
+import Footer from "../Footer";
 const withAuth=Component=> {
   const Auth =(props) => {
     // Login data added to props via redux-store (or use react context for example)
@@ -23,7 +24,7 @@ const withAuth=Component=> {
       <div className="outer">
       <Header state={state}/>
       <Component {...props} />
-      {/* <Footer/> */}
+      <Footer/>
       </div>
     );
   };
