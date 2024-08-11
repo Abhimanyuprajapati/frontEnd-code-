@@ -1,0 +1,1223 @@
+.landingPage {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.landingPage .ottheader {
+    background: radial-gradient(50% 171.6% at 50% 50%, #3D0403 0%, #270705 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem 5rem;
+}
+
+.landingPage .ottheader button {
+    background: linear-gradient(94.34deg, #FCFF5A 5.28%, #EF9513 94.48%);
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    border: none;
+}
+
+.landingPage .ottcomp {
+    background: radial-gradient(50% 171.6% at 50% 50%, #3D0403 0%, #270705 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.landingPage .ottcomp span {
+    z-index: 400;
+    padding-bottom: 2rem;
+}
+
+.landingPage .ottcomp .ottpara>p {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.landingPage .ottcomp .ottpara button {
+    background: linear-gradient(94.34deg, #FCFF5A 5.28%, #EF9513 94.48%);
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    border: none;
+}
+
+.landingPage .ottcomp img.ottback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -3rem;
+}
+
+/* youtube section */
+.landingPage .youtubesection {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    background: radial-gradient(50% 171.6% at 50% 50%, #3D0403 0%, #270705 100%);
+}
+
+.landingPage .youtubesection .youtubesection1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landingPage .youtubesection .youtubesection1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.youtubesection2 {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2rem 1rem 6rem 4rem;
+}
+
+.youtubesection2::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.scroll:hover {
+    transform: scale(1.3);
+}
+
+iframe {
+    width: 380px;
+    height: 210px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+
+/* download section */
+.landingPage .landingdownloadsection {
+    background: linear-gradient(105.96deg, #D3650C 0%, #CB061C 100%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.landingPage .landingdownloadsection img.downloadimg {
+    width: 100%;
+    height: 100%;
+}
+
+.landingPage .landingdownloadsection .downloadinfo h1 {
+    font-weight: 600;
+}
+
+.landingPage .landingdownloadsection .downloadinfo p {
+    font-size: 1.5rem;
+}
+
+.landingPage .landingdownloadsection .downloadinfo .downlo {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.landingPage .landingdownloadsection .downloadinfo .downlo span img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.landingPage .landingdownloadsection .downloadinfo .downlo .downgoogle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* upcoming section */
+.landingPage .upcomingland {
+    background-image: url('../assets/landing/upcomback.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.landingPage .upcomingland .uplandtrans img {
+    width: 100%;
+    height: 100%;
+}
+
+.landingPage .upcomingland .container {
+    display: flex;
+    overflow-x: auto;
+    margin: 0px;
+    padding: 6rem 0rem 4rem 1rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+.landingPage .upcomingland .container::-webkit-scrollbar {
+    display: none;
+}
+
+.landingPage .upcomingland .container .container1 {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.landingPage .upcomingland .container .container1 .container2 {
+    display: inline-block;
+    position: relative;
+    margin-right: -60px;
+    z-index: 10;
+}
+
+.landingPage .upcomingland .container .container1 .container2 .container3 {
+    margin-right: 0px;
+    display: block;
+    padding: 0;
+    z-index: -1;
+}
+
+.landingPage .upcomingland .container .container1 .container2>h1 {
+    background: linear-gradient(195.98deg, #D3650C 38.02%, #CB061C 96.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 6rem;
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    font-weight: 700;
+    color: transparent;
+}
+
+.landingPage .upcomingland .container .container1 .upcomingImage {
+    border-radius: 1rem;
+    z-index: 200;
+}
+
+.landingPage .upcomingland .container .container1 .upcomingImage a img {
+    border-radius: 1rem;
+}
+
+/* feedback section */
+.landingPage .fedbackpage {
+    background-image: url('../assets/landing/fedbackground.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.landingPage .fedbackpage .testiomonial img {
+    width: 100%;
+    height: 100%;
+}
+
+.landingPage .feedbackbox {
+    display: flex;
+    overflow-x: auto;
+}
+
+.landingPage .feedbackbox::-webkit-scrollbar {
+    display: none;
+}
+
+.landingPage .fedbackpage .feedbackbox .fedbackbox {
+    display: inline-block;
+    margin-right: 1rem;
+    width: 300px;
+    background: linear-gradient(136.83deg, rgba(211, 97, 13, 0.2) 0%, rgba(203, 10, 27, 0.2) 100%);
+    border-radius: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.landingPage .fedbackpage .feedbackbox .fedbackbox02 {
+    background: linear-gradient(136.83deg, rgba(211, 191, 13, 0.2) 0%, rgba(10, 203, 29, 0.2) 100%);
+}
+
+.landingPage .fedbackpage .feedbackbox .fedbackbox03 {
+    background: linear-gradient(136.83deg, rgba(13, 211, 199, 0.2) 0%, rgba(37, 10, 203, 0.2) 100%);
+}
+
+.landingPage .fedbackpage .feedbackbox .fedbackbox04 {
+    background: linear-gradient(136.83deg, rgba(183, 13, 211, 0.2) 0%, rgba(37, 10, 203, 0.2) 100%);
+}
+
+.landingPage .fedbackpage .feedbackbox .fedbackbox .descfed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.landingPage .fedbackpage .feedbackbox .fedbackbox .descfed01 p {
+    width: 100%;
+    position: relative;
+}
+
+.landingPage .fedbackpage .feedbackbox .fedbackbox .descfed span:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingPage .fedbackpage .feedbackbox .fedbackbox .descfed span:nth-child(2) p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.landingPage .fedbackpage .feedbackbox .fedbackbox .descfed span:nth-child(2) p:nth-child(2) {
+    font-size: 14px;
+}
+
+/* watch section */
+.landingPage .landingWatch {
+    background: linear-gradient(105.96deg, #D3650C 0%, #CB061C 100%);
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.landingPage .landingWatch .landwatchphoto {
+    margin: 0;
+    background-image: url('../assets/landing/watchbackphoto.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+.landingPage .landingWatch .landwatchphoto img {
+    margin-top: 3rem;
+    position: relative;
+    z-index: 12;
+}
+
+.landingPage .landingWatch .landwatchdetails {
+    width: 60%;
+    margin-left: -5rem;
+    z-index: 1;
+    position: relative;
+}
+
+.landingPage .landingWatch .landwatchdetails .landwatchdetails1 {
+    width: 100%;
+}
+
+.landingPage .landingWatch .landwatchdetails .landwatchdetails1 img {
+    width: 800px;
+    height: 90vh;
+    z-index: -111;
+}
+
+.landingPage .landingWatch .landwatchdetails>.landwatchdetails2 {
+    position: absolute;
+    color: white;
+    top: 5rem;
+    left: 8rem;
+}
+
+.landingPage .landingWatch .landwatchdetails>.landwatchdetails2 h1 {
+    margin-bottom: 2rem;
+}
+
+/* Plane section */
+.landingPage .PlansLanding {
+    background-image: url('../assets/landing/upcomback.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.landingPage .PlansLanding .planimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.landingPage .PlansLanding .Plansbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 3rem 4rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.landingPage .PlansLanding .Plansbox .Plansbox1 {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(136.83deg, rgba(211, 97, 13, 0.2) 0%, rgba(203, 10, 27, 0.2) 100%);
+}
+
+.landingPage .PlansLanding .Plansbox .Plansbox1 h1 {
+    width: 100%;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(105.96deg, #D3650C 0%, #CB061C 100%);
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.landingPage .PlansLanding .Plansbox .Plansbox1 .Plansbox2 {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 16px;
+}
+
+.landingPage .PlansLanding .Plansbox .Plansbox1 .Plansbox2 span:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.landingPage .PlansLanding .Plansbox .Plansbox1>button {
+    width: 100%;
+    background: linear-gradient(94.34deg, #FCFF5A 5.28%, #EF9513 94.48%);
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    filter: brightness(80%);
+}
+
+.landingPage .PlansLanding .Plansbox .Plansbox1>button:hover {
+    filter: brightness(120%);
+}
+
+.landingPage .PlansLanding .Plansbox .Plansbox1>button>a {
+    text-decoration: none;
+    color: black;
+}
+
+.landingPage .PlansLanding .buttonPlan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.landingPage .PlansLanding .buttonPlan>button {
+    width: 30%;
+    background: linear-gradient(94.34deg, #FCFF5A 5.28%, #EF9513 94.48%);
+    border-radius: 50px;
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    filter: brightness(90%);
+}
+
+.landingPage .PlansLanding .buttonPlan>button:hover {
+    filter: brightness(120%);
+}
+
+/* footer section */
+.landingPage .landfooter {
+    background-image: url('../assets/landing/fedbackground.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.landingPage .landfooter .landfooter01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.landingPage .landfooter .landfooter01 span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+.landingPage .landfooter .arrow {
+    position: absolute;
+    right: 0;
+    filter: brightness(70%);
+    cursor: pointer;
+    animation: moveUpDown 1s infinite ease-in-out;
+}
+
+.landingPage .landfooter .arrow:hover {
+    filter: brightness(100%);
+}
+
+
+/* media query */
+
+@media (max-width: 767px) {
+
+    .landingPage .ottheader {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .landingPage .ottheader>img {
+        width: 100px;
+        height: 100%;
+    }
+
+    .landingPage .ottheader button {
+        padding: 0.5rem;
+        border: double;
+        font-size: 14px;
+    }
+
+
+    .landingPage .ottcomp {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0rem;
+    }
+
+    .landingPage .ottcomp span {
+        z-index: 400;
+        padding: 1rem 0.5rem;
+    }
+
+    .landingPage .ottcomp .ottpara {
+        width: 100%;
+    }
+
+    .landingPage .ottcomp .ottpara>p {
+        font-size: 30px;
+        font-weight: 600;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    .landingPage .ottcomp .ottpara button {
+        background: linear-gradient(94.34deg, #FCFF5A 5.28%, #EF9513 94.48%);
+        width: 100%;
+        border-radius: 50px;
+        padding: 0.5rem 2rem;
+        border: double;
+        margin-bottom: 1rem;
+    }
+
+    .landingPage .ottcomp img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        bottom: 0rem;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+
+    /* trailer */
+    .landingPage .youtubesection .youtubesection1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .youtubesection2 {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 2rem 1rem 4rem 0rem;
+    }
+
+    .scroll {
+        display: inline-block;
+        margin-right: 0rem;
+    }
+
+    .scroll:hover {
+        transform: scale(1);
+    }
+
+    iframe {
+        width: 360px;
+        height: 200px;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid;
+    }
+
+    /* download section */
+    .landingPage .landingdownloadsection {
+        background: linear-gradient(105.96deg, #D3650C 0%, #CB061C 100%);
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 0;
+        width: 100%;
+    }
+
+    .landingPage .landingdownloadsection .downloadimg {
+        width: 100%;
+    }
+
+    .landingPage .landingdownloadsection .downloadimg img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .landingPage .landingdownloadsection .downloadinfo {
+        margin: 0px;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .landingPage .landingdownloadsection .downloadinfo h1 {
+        font-weight: 500;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .landingPage .landingdownloadsection .downloadinfo p {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .landingPage .landingdownloadsection .downloadinfo .downlo {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .landingPage .landingdownloadsection .downloadinfo .downlo span>img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    .landingPage .landingdownloadsection .downloadinfo .downlo .downgoogle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        gap: 0rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* upcoming section */
+    .landingPage .upcomingland .container {
+        display: flex;
+        overflow-x: auto;
+        margin: 0px;
+        padding: 6rem 0rem 4rem 0.3rem;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .landingPage .upcomingland .container .container1 .upcomingImage a .mobilewidthland {
+       width: 250px;
+       height: 370px;
+    }
+
+    /* feedback section */
+    .landingPage .fedbackpage {
+        padding: 1rem 0rem;
+    }
+
+    .landingPage .fedbackpage .testiomonial img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .landingPage .feedbackbox {
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .landingPage .feedbackbox::-webkit-scrollbar {
+        display: none;
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox {
+        display: inline-block;
+        margin-right: 0.0rem;
+        width: 100% !important;
+        background: linear-gradient(136.83deg, rgba(211, 97, 13, 0.2) 0%, rgba(203, 10, 27, 0.2) 100%);
+        border-radius: 1rem;
+        color: white;
+        margin-bottom: 1rem;
+        margin-left: 0.4rem;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox02 {
+        background: linear-gradient(136.83deg, rgba(211, 191, 13, 0.2) 0%, rgba(10, 203, 29, 0.2) 100%);
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox03 {
+        background: linear-gradient(136.83deg, rgba(13, 211, 199, 0.2) 0%, rgba(37, 10, 203, 0.2) 100%);
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox04 {
+        background: linear-gradient(136.83deg, rgba(183, 13, 211, 0.2) 0%, rgba(37, 10, 203, 0.2) 100%);
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox .descfed {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox .descfed01 p {
+        width: 100%;
+        position: relative;
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox .descfed span:nth-child(1) {
+        width: 25px;
+        height: 25px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox .descfed span:nth-child(2) p {
+        width: 250px;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox .descfed span:nth-child(2) p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    /* watch section */
+    .landingPage .landingWatch {
+        background: linear-gradient(105.96deg, #D3650C 0%, #CB061C 100%);
+        padding: 4rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .landingPage .landingWatch .landwatchphoto {
+        margin: 0;
+        background-image: url('../assets/landing/watchbackphoto.svg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .landingPage .landingWatch .landwatchphoto img {
+        width: 100%;
+        height: 100%;
+        margin-top: 3rem;
+        position: relative;
+        z-index: 12;
+    }
+
+    .landingPage .landingWatch .landwatchdetails {
+        width: 100%;
+        margin-left: 0rem;
+        z-index: 1;
+        position: relative;
+    }
+
+    .landingPage .landingWatch .landwatchdetails .landwatchdetails1 {
+        width: 100%;
+    }
+
+    .landingPage .landingWatch .landwatchdetails .landwatchdetails1>img {
+        width: 100%;
+        height: fit-content;
+        z-index: 1;
+    }
+
+    .landingPage .landingWatch .landwatchdetails>.landwatchdetails2 {
+        position: absolute;
+        color: white;
+        top: 0rem;
+        left: 0.5rem;
+    }
+
+    .landingPage .landingWatch .landwatchdetails>.landwatchdetails2 h1 {
+        margin-bottom: 1rem;
+        font-size: 14px;
+    }
+
+    .landingPage .landingWatch .landwatchdetails>.landwatchdetails2 p {
+        width: 100%;
+        line-height: 0.5rem;
+        font-size: 14px;
+    }
+
+    .landingPage .landingWatch .landwatchdetails>.landwatchdetails2 p>img {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* plan section */
+    .landingPage .PlansLanding .Plansbox {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 0.7rem;
+        padding: 3rem 0.5rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .landingPage .PlansLanding .Plansbox .Plansbox1 {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        border-radius: 0.4rem;
+        width: 90%;
+        padding: 1rem;
+        color: white;
+        background: linear-gradient(136.83deg, rgba(211, 97, 13, 0.2) 0%, rgba(203, 10, 27, 0.2) 100%);
+    }
+
+    .landingPage .PlansLanding .Plansbox::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .landingPage .PlansLanding .buttonPlan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+    }
+
+    .landingPage .PlansLanding .buttonPlan>button {
+        width: 100%;
+        background: linear-gradient(94.34deg, #FCFF5A 5.28%, #EF9513 94.48%);
+        border-radius: 50px;
+        font-size: 2rem;
+        padding: 0.5rem 2rem;
+        border: none;
+        filter: brightness(90%);
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .landingPage .ottheader {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .landingPage .ottcomp {
+        background: radial-gradient(50% 171.6% at 50% 50%, #3D0403 0%, #270705 100%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.8rem;
+    }
+
+    .landingPage .ottcomp span {
+        z-index: 400;
+        padding-bottom: 2rem;
+        width: 50%;
+    }
+
+    .landingPage .ottcomp .ottpara>p {
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    .landingPage .ottcomp .ottpara button {
+        background: linear-gradient(94.34deg, #FCFF5A 5.28%, #EF9513 94.48%);
+        border-radius: 50px;
+        padding: 0.5rem 2rem;
+        border: none;
+    }
+
+    .landingPage .ottcomp span:nth-child(2) {
+        width: 50%;
+    }
+
+    .landingPage .ottcomp span:nth-child(2) .ottmobilebackground {
+        width: 100%;
+    }
+
+    .landingPage .ottcomp img.ottback {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 1rem;
+    }
+
+    /* youtube section */
+
+    .youtubesection2 {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 2rem 1rem 6rem 1rem;
+    }
+
+    /* download section */
+    .landingPage .landingdownloadsection {
+        background: linear-gradient(105.96deg, #D3650C 0%, #CB061C 100%);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 0;
+        gap: 1rem;
+    }
+
+    .landingPage .landingdownloadsection .downloadimg img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .landingPage .landingdownloadsection .downloadinfo .downlo {
+        display: flex;
+        justify-content: left;
+        gap: 1rem;
+    }
+
+
+    /* upcoming section */
+
+    .landingPage .upcomingland .container {
+        display: flex;
+        overflow-x: auto;
+        margin: 0px;
+        padding: 5rem 0rem 4rem 0.5rem;
+        width: 100%;
+        gap: 1rem;
+    }
+
+
+    /* feedback section */
+    .landingPage .fedbackpage .feedbackbox .fedbackbox {
+        display: inline-block;
+        margin-right: 1rem;
+        width: 350px;
+        background: linear-gradient(136.83deg, rgba(211, 97, 13, 0.2) 0%, rgba(203, 10, 27, 0.2) 100%);
+        border-radius: 1rem;
+        color: white;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        padding: 1rem;
+        position: relative;
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox .descfed {
+        display: flex;
+        flex-direction: row;
+        width: 270px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox .descfed01 p {
+        width: 100%;
+        position: relative;
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox02 {
+        background: linear-gradient(136.83deg, rgba(211, 191, 13, 0.2) 0%, rgba(10, 203, 29, 0.2) 100%);
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox03 {
+        background: linear-gradient(136.83deg, rgba(13, 211, 199, 0.2) 0%, rgba(37, 10, 203, 0.2) 100%);
+    }
+
+    .landingPage .fedbackpage .feedbackbox .fedbackbox04 {
+        background: linear-gradient(136.83deg, rgba(183, 13, 211, 0.2) 0%, rgba(37, 10, 203, 0.2) 100%);
+    }
+
+    /* watch section */
+    .landingPage .landingWatch {
+        background: linear-gradient(105.96deg, #D3650C 0%, #CB061C 100%);
+        padding: 4rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .landingPage .landingWatch .landwatchphoto {
+        margin: 0;
+        background-image: url('../assets/landing/watchbackphoto.svg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .landingPage .landingWatch .landwatchphoto img {
+        width: 100%;
+        height: 100%;
+        margin-top: 3rem;
+        position: relative;
+        z-index: 12;
+    }
+
+    .landingPage .landingWatch .landwatchdetails {
+        width: 100%;
+        margin-left: 0rem;
+        z-index: 1;
+        position: relative;
+    }
+
+    .landingPage .landingWatch .landwatchdetails .landwatchdetails1 {
+        width: 100%;
+    }
+
+    .landingPage .landingWatch .landwatchdetails .landwatchdetails1>img {
+        width: 100%;
+        height: fit-content;
+        z-index: 1;
+    }
+
+    .landingPage .landingWatch .landwatchdetails>.landwatchdetails2 {
+        position: absolute;
+        color: white;
+        top: 0rem;
+        left: 0.5rem;
+    }
+
+    .landingPage .landingWatch .landwatchdetails>.landwatchdetails2 h1 {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 35px;
+    }
+
+    .landingPage .landingWatch .landwatchdetails>.landwatchdetails2 p {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .landingPage .landingWatch .landwatchdetails>.landwatchdetails2 p>img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    /* Plane section */
+    .landingPage .PlansLanding .Plansbox {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 2rem;
+        padding: 3rem 1rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .landingPage .PlansLanding .Plansbox::-webkit-scrollbar {
+        display: none;
+    }
+
+    .landingPage .PlansLanding .buttonPlan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .landingPage .PlansLanding .buttonPlan>button {
+        width: 60%;
+        background: linear-gradient(94.34deg, #FCFF5A 5.28%, #EF9513 94.48%);
+        border-radius: 50px;
+        font-size: 2rem;
+        padding: 0.5rem 2rem;
+        border: none;
+        filter: brightness(90%);
+    }
+
+    .landingPage .PlansLanding .buttonPlan>button:hover {
+        filter: brightness(120%);
+    }
+}
+
+
+
+/* this is for popup */
+.popupStyles{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;    
+    color: white;
+}
+
+.popupStyles .popupContentStyles{
+    background: radial-gradient(50% 171.6% at 50% 50%, #5C0908 0%, #380804 100%);
+    padding: 1rem 4rem;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupStyles .popupContentStyles .closeButtonStyles{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popupStyles .popupContentStyles .popupplanstyle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupStyles .popupContentStyles .popupplanstyle > p{
+    background: linear-gradient(98.51deg, #A20AFF 43%, #EF1362 73.63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+
+.popupStyles .popupContentStyles .popupplanstyle .popupStylesdiv {
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(136.83deg, rgba(183, 13, 211, 0.2) 0%, rgba(37, 10, 203, 0.2) 100%);
+}
+
+.popupStyles .popupContentStyles .popupplanstyle .popupStylesdiv .popupPlan {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    background: linear-gradient(136.83deg, rgba(183, 13, 211, 0.2) 0%, rgba(37, 10, 203, 0.2) 100%);
+}
+
+.popupStyles .popupContentStyles .popupplanstyle .popupStylesdiv .popupPlan span:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.popupStyles .popupContentStyles .popupplanstyle .popupStylesdiv p {
+    font-size: 16px;
+}
+
+.popupStyles .popupContentStyles .popupplanstyle .popupStylesdiv > button > a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.popupStyles .popupContentStyles .popupplanstyle .popupStylesdiv > button {
+    width: 100%;
+    background: linear-gradient(94.34deg, #FCFF5A 5.28%, #EF9513 94.48%);
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    filter: brightness(100%);
+}
+
+
+@media (max-width: 767px) {
+    .popupStyles .popupContentStyles{
+        background: radial-gradient(50% 171.6% at 50% 50%, #5C0908 0%, #380804 100%);
+        padding: 2rem 1.7rem;
+        border-radius: 0.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popupStyles .popupContentStyles .popupplanstyle > p{
+        background: linear-gradient(98.51deg, #A20AFF 43%, #EF1362 73.63%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.8rem;
+    }
+}

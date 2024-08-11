@@ -1,0 +1,3607 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+/* this is sir directory */
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/* this is login page css */
+.login_page_css {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  padding: 12rem 0 5rem 0px;
+}
+.login_page_css  .sociallogin{
+  margin:2%;
+}
+.login_page_Input {
+  width: 450px;
+  height: 60px;
+  border: 2px solid orange;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+.login_page_Input input::placeholder{
+  color: #ccc;
+
+}
+.login_page_mainbox {
+  position: absolute;
+  margin-top: -12px;
+  background-color: #000;
+  padding: 0px 3rem;
+}
+
+.login_page_Input input {
+  background-color: #000;
+  color: orange;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  width: 90%;
+  height: 2rem;
+  outline: none;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.loginmainDiv button {
+  width: 280px;
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid #fa0;
+  background: linear-gradient(277deg,
+      rgba(0, 0, 0, 0) 0%,
+      #362502 48.96%,
+      rgba(0, 0, 0, 0) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.orMainLogin {
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: orange;
+}
+
+.googleAuth {
+  width: auto;
+  border: 1px solid orange;
+  background: rgba(14, 14, 23, 0.2);
+  border-radius: 5rem;
+  padding: 5px 30px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 10px 0 0;
+}
+
+
+@media (max-width: 576px) {
+  .login_page_css {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    padding: 7rem 0px;
+    margin: 0px;
+  }
+
+  .loginmainDiv {
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+  }
+  .login_page_css p{
+    font-size: 18px;
+    
+  }
+  .login_page_Input {
+    width: 100%;
+    height: 60px;
+    border: 2px solid orange;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 1rem 0rem;
+  }
+
+  .login_page_mainbox {
+    position: absolute;
+    margin-top: -12px;
+    background-color: #000;
+    padding: 0px 1rem;
+    width: max-content;
+  }
+
+  .login_page_Input input {
+    background-color: #000;
+    color: orange;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    width: 100%;
+    height: 2rem;
+    outline: none;
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .loginmainDiv button {
+    width: 80%;
+    height: 60px;
+    border-radius: 32px;
+    border: 1px solid #fa0;
+    background: linear-gradient(277deg,
+        rgba(0, 0, 0, 0) 0%,
+        #362502 48.96%,
+        rgba(0, 0, 0, 0) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .googleAuth {
+    width: auto;
+    border: 1px solid orange;
+    background: rgba(14, 14, 23, 0.2);
+    border-radius: 5rem;
+    padding: 5px 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0.5rem;
+  }
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/* this is the Register Page css goes here */
+.RegisterPage {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  padding: 3rem 1rem;
+}
+
+.registerMain {
+  margin: 1rem 30%;
+  padding: 1rem 0;
+  width: 40%;
+  display: inline-block;
+}
+.registerMain h1{
+  text-align: center;
+  color: #fff;
+  margin: 10px 0;
+}
+.registerInput {
+  margin: 0rem 0 .5rem 0;
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+.registerInput input[type='radio']{
+  height: 20px;
+  margin: 0 10px 0 30px;
+  border: 1px solid #fff;
+  padding: 0;
+  width: 20px;
+}
+.registerInput input::placeholder{
+  color: #fff;
+
+}
+.registerInput label{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.registerInput input {
+  width: 90%;
+  height: 60px;
+  border-radius: 60px;
+  border: 2px solid orange;
+  background-color: black;
+  text-align: center;
+  padding: 0px 2rem;
+  color: white;
+  margin: 0 5%;
+}
+
+.small {
+  display: flex;
+  justify-content: center;
+  color: #f4e221;
+  margin:10px 0;
+}
+
+.registerInput .lockerPassword {
+  position: absolute;
+  right: 4rem;
+  top: 1rem;
+}
+
+.ReisterButtonDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.registerSubmit {
+  width: 50%;
+  height: 60px;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  border-radius: 32px;
+  border: 2px solid #ffaa00;
+  background: linear-gradient(276.9deg,
+      rgba(0, 0, 0, 0) 0%,
+      #362502 48.96%,
+      rgba(0, 0, 0, 0) 100%);
+  margin: 0rem 25%;
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/*this is footer page css*/
+.FooterMain {
+  position: absolute;
+  width: 40%;
+  height: 80px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 170, 0, 1);
+  background: linear-gradient(276.9deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      #362502 48.96%,
+      rgba(0, 0, 0, 0.6) 100%);
+  color: white;
+  bottom: 0.5rem;
+  margin: 0 30%;
+  position: fixed;
+  z-index: 9999;
+}
+.FooterMain img.LogoFooter.sea {
+  height: 30px;
+  width: 30px;
+  margin: 5px 0 5px 0;
+}
+.FooterMain img.LogoFooter.see {
+  height: 40px;
+  width: 40px;
+  margin: 0px 0 0px 0;
+}
+.FooterOption {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.FooterHome img.LogoFooter {
+  height: 40px;  
+  width: 40px;
+}
+.FooterHome img.LogoFooter.ext {
+  width: 30px;
+  margin: 6px 0 5px 0;
+  height: 30px;
+} 
+.FooterHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FooterReels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FooterUpcoming {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FooterMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.FooterOption a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.FooterOption a:hover {
+  color: #fff;
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/* this is about us page css */
+/* do not need to write the media query for about us page */
+.AboutUsPage_css {
+  text-align: left;
+  width: 100%;
+  height: auto;
+  padding: 8rem 1.5rem;
+  color: white;
+  background: linear-gradient(0deg,
+      rgba(246, 173, 27, 0) 30.12%,
+      #8c7500 100.13%);
+}
+
+.AboutUsPage_css span {
+  font-size: 2.5rem;
+}
+
+.AboutUsPage_css p {
+  text-align: left;
+}
+
+.AboutUsPage_css ul {
+  padding: 0;
+  margin: 0 20px;
+}
+
+.AboutUsPage_css ul li {
+  padding: 10px 0 0 0;
+  font-size: 18px;
+}
+
+.AboutUsPage_css p {
+  font-size: 20px;
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/*this is contents/Id page css*/
+.content-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg,
+      #f4d42b -96.12%,
+      rgba(164, 136, 80, 0) 72.13%);
+  padding: 100px 0 0 0;
+}
+.contentchild-1 {
+  width: 57vw;
+}
+
+.contentchild-1 {
+  margin: 0px;
+  padding: 10px;
+  width: 920px;
+}
+
+.contentchild-2 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.contentchild-2 .bigplaybtn{
+  position: absolute;
+  margin: 24% 44%;
+}
+.contentchild-2 .background {
+  border-radius: 12px;
+  border: 5px solid #82580e;
+}
+
+.contentchild-2 .smallbackground {
+  width: 275px;
+  height: 380px;
+  position: absolute;
+  border-radius: 12px;
+  margin: 8% 0 5% -15%;
+  border: 5px solid #82580e;
+}
+
+.contentchild-3 h1 {
+  color: white;
+  font-size: 4rem;
+}
+
+.contentchild-4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contentchild-5 {
+  width: 130.63px;
+  height: 40.82px;
+  border-radius: 5px;
+  border: 1px solid rgba(246, 173, 27, 1);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.contentchild-8 {
+  color: rgba(246, 173, 27, 1);
+}
+
+.contentsBackgroundLine {
+  background-image: url("../assets/loginPage/Rectangle 1262.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 36vh;
+  margin: -5% 0 0 0;
+}
+
+/* this is for the TV screen */
+.contentsDetailTV {
+ margin: 0px;
+ padding: 0rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 1.2rem;
+}
+
+.DetailTvImage4 .DetailTvTitle {
+  font-size: 22px;
+  color: white;
+}
+.DetailTvImage{
+  width: 20%;
+  padding: 0 0 0 5%;
+}
+.DetailTvImage4 {
+  width: 50%;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.DetailTvImage4 hr{
+  border: 2px solid orange;
+}
+.DetailTvImage4 p{
+  margin: 5px 0 10px 0;
+  padding: 0;
+  color: orange;
+}
+.DetailTvImage4 p .tagchi{
+  margin: 10px 10px 20px 0;
+  border: 1px solid red;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 10px 20px;
+}
+.DetailTvImage4 h4 {
+  color: white;
+  margin: 10px 0 0 0;
+}
+.directorBackround{
+  border-radius: 12px;
+}
+.contentsDetailTVBackground {
+  background-image: url("../assets/loginPage/backgroundLogo.png");
+  background-repeat: no-repeat;
+  width: 45%;
+  height: 90vh;
+  padding-top: 12rem;
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .DetailTvImage{
+    width: 100%;
+    padding: 0 0 0 2%;
+  }
+  .content-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg,
+        #f4d42b -96.12%,
+        rgba(164, 136, 80, 0) 72.13%);
+  margin: 0px ;
+  padding: 5rem  0 0 0rem;
+  width: 100%;
+  }
+.contentchild-2{
+  width: 100%;
+
+}
+  .smallbackground{
+    display: none;
+  }
+  .background{
+    width: 100%;
+    height: 50vh;
+  }
+  .contentchild-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .contentchild-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .contentchild-2 .bigplaybtn{
+    position: absolute;
+    margin: 24% 42%;
+    width: 80px;
+    height: 80px;
+  }
+  .contentchild-2 .background {
+    border-radius: 12px;
+    border: 1px solid #82580e;
+    height: 280px;
+  }
+  
+  .contentchild-2 .smallbackground {
+    width: 275px;
+    height: 300px;
+    position: absolute;
+    border-radius: 12px;
+    margin: 8% 0 5% -15%;
+    border: 5px solid #82580e;
+  }
+  
+  .contentchild-3 h1 {
+    color: white;
+    font-size: 4rem;
+  }
+  
+  .contentchild-4 {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contentchild-5 {
+    width: 130.63px;
+    height: 40.82px;
+    border-radius: 5px;
+    border: 1px solid rgba(246, 173, 27, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .contentchild-8 p{
+    color: rgba(246, 173, 27, 1);
+    text-align: left;
+    padding: 0px 0.5rem;
+  }
+  
+  .contentsBackgroundLine {
+    display: none;
+  }
+/* this the container TV */
+  .contentsDetailTV {
+    margin: 20px 0;
+    padding: 0rem 0rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%; 
+   }
+   .DetailTvImage4 {
+    color: orange;
+     width:100%;
+     padding:0px 10px;
+     font-size: 18px;
+   }
+ 
+   .DetailTvImage4 p{
+    font-size: 18px;
+    padding: 0px 0 0 0;
+    width: 100%;
+  }
+  .DetailTvImage4 p.tg{
+    line-height: 50px;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .DetailTvImage4 p.tg .tagchi{
+    margin: 0px 5px 0px 0;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+   .DetailTvImage4 h4 {
+     color: #fff;
+     margin-top:10px;
+     padding: 0px 0px 0 0;
+   }
+   
+   .contentsDetailTVBackground {
+     background-image: url("../assets/loginPage/backgroundLogo.png");
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 90vh;
+     padding-top: 8rem;
+     padding-left: 2rem;
+     display: none;
+   }
+   .DetailTvImage{
+    display: none;
+   }
+} 
+@media (min-width: 768px) and (max-width: 1200px) {
+  .content-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg,
+        #f4d42b -96.12%,
+        rgba(164, 136, 80, 0) 72.13%);
+  margin: 0px ;
+  padding: 5rem 0rem;
+  width: 100%;
+  }
+.contentchild-2{
+  width: 100%;
+
+}
+  .smallbackground{
+    display: none;
+  }
+  .background{
+    width: 100%;
+    height: 50vh;
+  }
+  .contentchild-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .contentchild-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contentchild-2 .background {
+    border-radius: 12px;
+    border: 5px solid #82580e;
+  }
+  
+  .contentchild-2 .smallbackground {
+    width: 275px;
+    height: 380px;
+    position: absolute;
+    border-radius: 12px;
+    margin: 8% 0 5% -15%;
+    border: 5px solid #82580e;
+  }
+  
+  .contentchild-3 h1 {
+    color: white;
+    font-size: 6rem;
+    padding-left: 2rem;
+  }
+  
+  .contentchild-4 {
+    display: flex;
+    justify-content: left;
+    margin-left: 2rem;
+  }
+  
+  .contentchild-5 {
+    width: 130.63px;
+    height: 40.82px;
+    border-radius: 5px;
+    border: 1px solid rgba(246, 173, 27, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 3rem;
+
+  }
+  
+  .contentchild-8 p{
+    color: rgba(246, 173, 27, 1);
+    text-align: left;
+    padding: 0px 0.5rem;
+    margin-left: 2rem;
+  }
+  
+  .contentsBackgroundLine {
+    background-image: url("../assets/loginPage/Rectangle 1262.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 15vh;
+  }
+  /* this the container TV */
+  .contentsDetailTV {
+    margin: 0px;
+    padding: 0rem 0rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     line-height: 1.2rem;
+   }
+   
+   .DetailTvImage4 {
+     color: orange;
+   }
+   
+   .DetailTvImage4 h4 {
+     color: white;
+   }
+   
+   .contentsDetailTVBackground {
+     background-image: url("../assets/loginPage/backgroundLogo.png");
+     background-repeat: no-repeat;
+     width: 100%;
+     height: 50vh;
+     padding-top: 5rem;
+     padding-left: 2rem;
+   }
+}
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/* this is subscription page css */
+.subscriptionPage_css {
+  background: linear-gradient(0deg,
+      rgba(246, 173, 27, 0) 30.12%,
+      #8c7500 100.13%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 2rem;
+}
+
+.subscriptionBuyPlan {
+  display: flex;
+}
+
+.BuyPlannow {
+  color: white;
+  width: auto;
+  height: auto;
+  border: 1px;
+  padding: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border-top: 2px solid #f6ad1b;
+  background: linear-gradient(180deg, #000 0%, rgba(82, 80, 80, 0) 100%);
+}
+
+.BuyPlannow:hover {
+  transform: scale(1.2);
+  transition: 0.4s linear;
+}
+
+.BuyPlannow h2 {
+  font-size: 26px;
+  background: linear-gradient(180deg, #f6ad1b 98.51%, #855900 151.45%);
+  background-clip: text;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.BuyPlannow h2 span.price img {
+  padding: 0;
+  margin-top: -5px;
+}
+
+.BuyPlannow h2 span.price {
+  font-size: 38px;
+  font-weight: bold;
+  padding-right: 5px;
+  background: linear-gradient(180deg, #f6ad1b 98.51%, #855900 151.45%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.BuyPlannow hr {
+  border-top: 2px solid orange;
+}
+
+.BuyPlannow button {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 170, 0, 1);
+  background: linear-gradient(180deg, #000 0%, rgba(82, 80, 80, 0) 100%);
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.BuyPlannow button:hover {
+  background: linear-gradient(180deg, #f6ad1b 28.51%, #855900 151.45%);
+}
+
+/* this is media query for subscription page */
+@media screen and  (max-width: 576px) {
+  /* this is the Register Page css goes here */
+.RegisterPage {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  padding: 3rem 1rem;
+}
+
+.registerMain {
+  margin: 1rem 0;
+  width: 100%;
+  padding: 1rem 0;
+  display: inline-block;
+}
+
+.registerInput {
+  margin: 0rem 0 0rem 0;
+  position: relative;
+  width: 100%;
+  display: inline-flex;
+}
+
+.registerInput input {
+  width: 100%;
+  height: 60px;
+  border-radius: 60px;
+  border: 2px solid orange;
+  background-color: black;
+  text-align: center;
+  padding: 0px 1rem;
+  color: white;
+}
+.registerInput input[type='radio']{
+  height: 20px;
+  margin: 0 10px 0 25px;
+  padding: 0;
+}
+.registerInput label{
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.small {
+  display: flex;
+  justify-content: center;
+  color: #f4e221;
+  margin:1.5rem 0 0 0;
+}
+
+.registerInput .lockerPassword {
+  position: absolute;
+  right: 4rem;
+  top: 1rem;
+}
+
+.ReisterButtonDiv {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 0 0;
+}
+.ReisterButtonDiv input{
+  margin: 0 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.registerSubmit {
+  width: 90%;
+  height: 60px;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  border-radius: 20px;
+  border: 2px solid #ffaa00;
+  background: linear-gradient(276.9deg,
+      rgba(0, 0, 0, 0) 0%,
+      #362502 48.96%,
+      rgba(0, 0, 0, 0) 100%);
+  margin: 0rem 5%;
+}
+
+  .FooterHome img.LogoFooter.ext {
+    width: 30px;
+    margin: 5px 0 5px 0;
+    height: 30px;
+  } 
+  .subscriptionPage_css {
+    margin: 0rem 0rem;
+    padding: 6rem 0rem;
+  }
+
+  .subscriptionBuyPlan {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;    
+  }
+
+  .BuyPlannow {
+    padding:1rem 0.5rem;
+    margin: 1rem 10%;
+    display: flex;
+    width: 80%;
+    flex-direction: column;    
+    font-size: 1rem;
+    line-height: 0.4rem;
+    background: linear-gradient(180deg, #000 0%, rgba(82, 80, 80, 0) 100%);
+  }
+
+  .BuyPlannow p {
+    text-align: left;
+    font-size: 20px;
+    padding: 10px 0 0 0;
+  }
+
+  .BuyPlannow:hover {
+    transform: scale(1);
+    transition: 0.4s linear;
+  }
+
+  .BuyPlannow h2 {
+    font-size: 1.4rem;
+  }
+
+  .BuyPlannow h2 span.price {
+    font-size: 2.5rem;
+    padding-right: 1rem;
+  }
+
+  .BuyPlannow button {
+    padding: 10px 20px;
+    font-size: 20px;
+    height:60px;
+    width: 95%;
+    margin: 10px 2.5%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1290px) {
+  .subscriptionPage_css {
+    margin: 0rem 0rem;
+    padding: 6rem 0rem;
+  }
+
+  .subscriptionBuyPlan {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .BuyPlannow {
+    padding: 1rem;
+    margin: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background: linear-gradient(180deg, #000 0%, rgba(82, 80, 80, 0) 100%);
+  }
+
+  .BuyPlannow h2 {
+    font-size: 2.5rem;
+  }
+
+  .BuyPlannow h2 span.price {
+    font-size: 5rem;
+    padding-right: 3rem;
+  }
+
+  .BuyPlannow button {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    margin-top: 2rem;
+  }
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/* this is contactus page css */
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg,
+      #f4d42b -96.12%,
+      rgba(246, 173, 27, 0) 72.13%);
+}
+
+.contactusMain {
+  margin-top: 5.5rem 2rem;
+  padding: 0px;
+}
+
+.contactusBackground {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUs-headline {
+  color: white;
+  font-weight: 600;
+}
+
+.contactUs-detail {
+  color: rgba(255, 255, 255, 1);
+}
+
+.contactUs-form {
+  width: 90%;
+  border: 2px solid orange;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin: 0px 5%;
+}
+
+.ch {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+.ch input {
+  width: 100%;
+  height: 3rem;
+  margin: 1rem 0 0 0;
+  background-color: #000;
+  padding-top: 3rem;
+  padding-left: 8px;
+  padding-bottom: 1.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid orange;
+}
+
+.inputboxCh {
+  position: absolute;
+  color: orange;
+  top: 1.5rem;
+  left: .8rem;
+}
+
+.ch textarea {
+  width: 100%;
+  height: 10rem;
+  margin: 1rem 0 0 0;
+  background-color: #000;
+  padding-top: 2rem;
+  padding-left: 8px;
+  padding-bottom: 1.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  border: 2px solid orange;
+}
+
+.submitbutton {
+  width: 10rem;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid orange;
+  background: linear-gradient(276.9deg,
+      rgba(0, 0, 0, 0) 0%,
+      #362502 48.96%,
+      rgba(0, 0, 0, 0) 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 1rem 0 0 0;
+}
+
+/* quotes components */
+.quote {
+  display: block;
+  justify-content: center;
+  color: #f8a11e;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 45%;
+  margin: 1rem 27.5%;
+  text-align: center;
+}
+
+.quote-box {
+  border: 2px solid orange;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.quote .css-i4bv87-MuiSvgIcon-root {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* download components */
+.container-add {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  display: flex;
+  margin-top: 1rem 0px;
+}
+
+.downloadImg {
+  background-image: url("../assets/loginPage/Group\ 66456.png");
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+.downloadImg3 {
+  width: 55vw;
+  height: auto;
+}
+
+.scannerSection {
+  margin: 12rem 0rem;
+  color: white;
+}
+
+.hrdownload {
+  width: 18vw;
+  border-top: 3px solid orange;
+}
+
+.AppleStore {
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+/* newsletter components */
+.trailernews {
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(180deg,
+      #f4d42b -96.12%,
+      rgba(246, 173, 27, 0) 72.13%);
+}
+
+.trailernews input {
+  width: 25rem;
+  height: 3rem;
+  background-color: #000;
+  color: white;
+  border-radius:12px;
+  border: 2px solid orange;
+  padding: 0px 10px;
+}
+
+.trailernews button {
+  width: 250px;
+  height: 50px;
+  border-radius: 12px;
+  border: 3px solid orange;
+  background: linear-gradient(276.9deg,
+      rgba(0, 0, 0, 0) 0%,
+      #362502 48.96%,
+      rgba(0, 0, 0, 0) 100%);
+  color: white;
+}
+
+/* question components */
+.frequent {
+  padding: 50px 12% 50px 12%;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.frequent h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4rem;
+  padding: 10px 0 0 0;
+}
+
+.frequent .row {
+  padding: 0px;
+}
+
+.frequent .row .col-md-6 {
+  padding: 0px 10px;
+  display: inline-block;
+  margin: 0px 0%;
+}
+
+.frequent .row .col-md-6 .freq-child {
+  display: inline-flex;
+  border-top: 1px solid orange;
+  width: 100%;
+  margin: 0;
+}
+
+.frequent .row .col-md-6 .hidden {
+  height: 0px;
+  width: 100%;
+  padding: 0px;
+  color: orange;
+  overflow: hidden;
+  transition: 0.3s linear;
+}
+
+.frequent .row .col-md-6 .hidden p {
+  padding: 10px 15px 10px 15px;
+  border-top: 1px solid orange;
+  margin: 0;
+  color: orange;
+}
+
+.frequent .row .col-md-6 span {
+  width: 90%;
+  color: orange;
+  padding: 13px 20px 13px 20px;
+}
+
+.frequent .row .col-md-6 .fa {
+  width: 10%;
+  padding: 15px 20px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.frequent .row .col-md-6 .fa-minus {
+  display: none;
+}
+
+/* this is contactus last components */
+.contactushr {
+  border-top: 5px solid rgba(246, 173, 27, 2);
+}
+
+.lastLineContactus {
+  margin: 0rem 2rem;
+  padding: 3rem 1rem;
+  color: rgba(246, 173, 27, 2);
+}
+
+.contactlastPara {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactlastPara button {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 20px;
+  background: linear-gradient(276.9deg,
+      rgba(0, 0, 0, 0) 0%,
+      #362502 48.96%,
+      rgba(0, 0, 0, 0) 100%);
+  border: 2px solid rgba(246, 173, 27, 2);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+/* this is media query for subscription page */
+@media (max-width: 767px) {
+  .contactUs {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .contactusMain {
+    padding: 0px;
+    margin: 5rem 0rem;
+  }
+
+  .contactusBackground {
+    margin: 0px;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactUs-form {
+    width: 100%;    
+    border-radius: 1rem;
+    padding: 1.5rem 0rem;
+  }
+
+  .inputboxCh {
+    position: absolute;
+    color: orange;
+    top: 1.5rem;
+    left: 20px;
+  }
+  .ch {
+    width:100%;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .ch input {
+    height: 3rem;
+    margin: 1rem 2.5%;
+    width: 95%;
+    background-color: #000;
+    padding-top: 3rem;
+    padding-left: 8px;
+    padding-bottom: 1.5rem;
+    color: white;
+    border-radius: 0.5rem;
+  }
+
+  .ch textarea {
+    width: 95%;
+    height: 10rem;
+    margin: 1rem 2.5%;
+    background-color: #000;
+    padding-top: 2rem;
+    padding-left: 8px;
+    padding-bottom: 1.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    border: 2px solid orange;
+  }
+  .submitbutton {
+    width: 10rem;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid orange;
+    background: linear-gradient(276.9deg,
+        rgba(0, 0, 0, 0) 0%,
+        #362502 48.96%,
+        rgba(0, 0, 0, 0) 100%);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1rem 0rem;
+  }
+
+  /* this is for the download */
+  .container-add {
+    width: 100%;
+    height: auto;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem 0px;
+  }
+
+  .downloadImg {
+    background-image: url("../assets/loginPage/Group\ 66456.png");
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .downloadImg3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .scannerSection {
+    margin: 2rem 0rem;
+    color: white;
+    text-align: center;
+  }
+
+  .hrdownload {
+    width: 18vw;
+    border-top: 3px solid orange;
+  }
+
+  .AppleStore {
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* this is the last para */
+  .contactlastPara {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* newsletter components */
+  .trailernews {
+    width: 100%;
+    padding-top: 3rem;
+  }
+
+  .trailernews input {
+    width: 90%;
+  }
+
+  .trailernews h1,
+  p {
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .trailernews button {
+    width: 50%;
+    height: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contactusMain {
+    width: 70%;
+    padding: 0px;
+    margin: 5rem 0rem;
+  }
+
+  .contactusBackground {
+    margin: 0px;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactUs-form {
+    width: 100%;
+    border: 2px solid orange;
+    border-radius: 1rem;
+    padding: 1.5rem 0rem;
+  }
+
+  .ch {
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+  .ch input {
+    height: 3rem;
+    margin: 1rem;
+    background-color: #000;
+    padding-top: 3rem;
+    padding-left: 8px;
+    padding-bottom: 1.5rem;
+    color: white;
+    border-radius: 0.5rem;
+
+  }
+
+  .submitbutton {
+    width: 10rem;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid orange;
+    background: linear-gradient(276.9deg,
+        rgba(0, 0, 0, 0) 0%,
+        #362502 48.96%,
+        rgba(0, 0, 0, 0) 100%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0rem;
+  }
+
+  /* this is the download section */
+  .container-add {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 1rem 0px;
+    justify-content: center;
+  }
+
+  .downloadImg {
+    background-image: url("../assets/loginPage/Group\ 66456.png");
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .downloadImg3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .scannerSection {
+    margin: 2rem 0rem;
+    color: white;
+  }
+
+  .hrdownload {
+    width: 18vw;
+    border-top: 3px solid orange;
+  }
+
+  .AppleStore {
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/* this is for upcoming page css */
+.upcoming-Page {
+  background: linear-gradient(180deg,
+      #f4d42b -96.12%,
+      rgba(246, 173, 27, 0) 72.13%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 20px 0;
+}
+
+.upcoming-Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 1rem 0rem;
+}
+
+.upcoming-Box .upcomingImage {
+  border: 2px solid #82580e;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+  width: 35%;
+  height: 100%;
+  z-index: 999;
+}
+.upcoming-Box .upcomingImage img{
+  border-radius: 20px;
+}
+.upcomingDetail {
+  background-color: black;
+  padding: 1rem 2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: 2px solid #82580e;
+  width: 65%;
+  margin-left: -12px;
+  z-index: 1;
+}
+
+.upcoming-Box .upcomingImage img {
+  width: 100%;
+}
+
+.upcomingDetail .upcomingInformation .upcomingDetailPara {
+  width: max-content;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.4rem 1rem;
+  border: 2px solid #82580e;
+}
+
+.upcomingDetail .upcomingInformation .upcomingMovieName {
+  color: white;
+  font-weight: 700;
+}
+
+.upcomingDetail .upcomingInformation .upcomingMoviPara {
+  color: rgba(246, 173, 27, 1);
+  font-size: 17px;
+  height: 125px;
+  overflow:hidden;
+}
+
+.upcomingInformationLogo {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  justify-content: space-around;
+}
+
+.upcomingPlayTrailer {
+  width: 10rem;
+  height: 2.8rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 170, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.upcomingPlayTrailer:hover,
+.upcomingWatchlist:hover,
+.upcomingShare:hover,
+.upcomingBell:hover {
+  color: rgba(255, 170, 0, 1);
+}
+
+.upcomingPlayTrailer img,
+.upcomingWatchlist img {
+  margin: 0 5px;
+}
+
+.upcomingWatchlist {
+  width: 10rem;
+  height: 2.8rem;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 170, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.upcomingShare {
+  width: 10rem;
+  height: 2.8rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 170, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+.upcomingShare  p{
+  margin: 10px;
+}
+.upcomingBell {
+  width: 3rem;
+  height: 2.8rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 170, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* section two this side */
+.product {
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+}
+
+.product .product_category {
+  width: 100%;
+  margin: 0;
+  padding: 0 5px;
+}
+
+.product .product_category .product_item_list {
+  display: inline-flex;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  transition: 1s linear;
+  padding: 0;
+  margin: 0;
+}
+
+.product_item_list a {
+  text-decoration: none;
+}
+
+.product_item_list a p {
+  color: #fff;
+  text-align: center;
+  padding: 5x 10px 0px 10px;
+  font-size: 20px;
+}
+
+.product_item_list div {
+  display: inline-flex;
+}
+
+.product_item_list::-webkit-scrollbar {
+  display: none;
+}
+
+.product_item_list .product_item {
+  margin: 0px 10px;
+}
+
+.product_item_list.header .product_item {
+  margin: 0px 0px;
+}
+
+.product_item_list.header .product_item .product_item_image {
+  margin-top: 0px;
+  transform: scale(1);
+  background: none;
+  box-shadow: none;
+}
+
+.product_item_image {
+  width: 240px;
+  position: relative;
+  height: 350px;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+}
+
+.product_item_image img {
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+}
+
+.product_item_image:hover {
+  margin-top: 0px;
+  transform: scale(1.02);
+  transition: 0.3s linear;
+}
+
+.product_item_list div .product_item .product_item_image_overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  background-repeat: no-repeat;
+  left: 0;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.product_item_list div .product_item:hover .product_item_image_overlay {
+  display: block;
+}
+
+.product_category_heading h4 {
+  color: #fff;
+  text-align: left;
+  padding: 20px 0px 10px 10px;
+  font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  .product_category_heading h4 {
+    color: #fff;
+    text-align: left;
+    padding: 0px 0px 10px 10px;
+    font-size: 20px;
+  }
+  .upcoming-Box .upcomingImage img{
+    border-radius: 0px;
+  }
+  .upcoming-Page {
+    background: linear-gradient(180deg,
+        #f4d42b -96.12%,
+        rgba(246, 173, 27, 0) 72.13%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 0 0rem;
+    margin: 0px;
+  }
+
+  .upcoming-Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0 0 0rem;
+  }
+
+  .upcoming-Box .upcomingImage {
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .upcomingDetail {
+    background-color: black;
+    padding: 0.5rem 0.5rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border: 1px solid #82580e;
+    width: 100%;
+    margin: 0;
+  }
+
+  .upcomingInformation p,
+  h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    padding-left: 0.5rem;
+  }
+
+  .upcomingInformationLogo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+  }
+
+  .upcomingPlayTrailer,
+  .upcomingWatchlist,
+  .upcomingShare,
+  .upcomingBell {
+    margin: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .upcoming-Page {
+    background: linear-gradient(180deg,
+        #f4d42b -96.12%,
+        rgba(246, 173, 27, 0) 72.13%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+    margin: 0px;
+  }
+
+  .upcoming-Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 2rem 0rem;
+  }
+
+  .upcoming-Box .upcomingImage {
+    border: 1px solid #82580e;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0rem 1rem;
+    width: 35%;
+  }
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/*sidenav*/
+.sidenav {
+  width: 0px;
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  border-radius: 0px 40px 0px 0px;
+  background: linear-gradient(277deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      #362502 48.96%,
+      rgba(0, 0, 0, 0.8) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px 0px;
+  transition: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0 10px 0;
+  padding: 0 10px;
+}
+
+.topnav .in {
+  color: #fff;
+}
+
+.topnav .in p {
+  padding: 0 0px;
+}
+
+.topnav .in p:nth-child(1) {
+  color: #fa0;
+}
+
+.topnav img {
+  cursor: pointer;
+}
+
+.topnav img:nth-child(2) {
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.topnav img:nth-child(2):hover {
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.sidenav a.hed {
+  color: #fff;
+  width: 100%;
+  border: 1px solid #fa0;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 10px 0px 0 75px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.sidenav ul {
+  width: 100%;
+  margin: 30px 0px;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.sidenav ul li {
+  font-size: 18px;
+  color: #fa0;
+  margin: 10px 0 0 0px;
+}
+
+.sidenav ul li a {
+  color: #fff;
+  font-size: 19px;
+  text-decoration: none;
+}
+
+.sidenav ul li a:hover {
+  color: #fa0;
+}
+
+.sidenav a.hed:hover {
+  color: #fa0;
+  border: 1px solid #fff;
+}
+
+.activate {
+  height: 400px;
+  background-color: #1c1a25;
+  width: 100%;
+}
+
+.activate h1 {
+  text-align: center;
+  color: #fff;
+  padding: 100px 0 0 0;
+}
+
+.activate p {
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.login .logg {
+  width: 36%;
+  border-radius: 12px;
+  margin: 5% 32%;
+  padding: 20px 10px;
+  display: inline-block;
+  height: auto;
+  border: 2px solid orange;
+}
+
+.login .logg .recap {
+  margin: 10px 30px;
+}
+
+.login .logg .dat {
+  width: 100%;
+  display: inline-flex;
+  padding: 10px;
+}
+
+.login .logg .small {
+  margin: 0 0 5px 25px;
+}
+
+.login .logg .dat .dat1 {
+  width: 49%;
+  margin: 0 0 0 1%;
+  display: inline-flex;
+}
+
+.login .logg .dat .dat1 .label {
+  padding: 20px 10px 20px 10px;
+  color: #fff;
+}
+
+.login .logg .dat .dat1 input[type="radio"] {
+  width: 20px;
+  margin: 0 0 0 20px;
+  height: auto;
+}
+
+.login .logg h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.login .logg p {
+  text-align: center;
+  color: #ccc;
+}
+
+.login .logg input {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin: 0px 0 0 0;
+  color: #fff;
+  background-color: #1c1a25;
+  width: 90%;
+  margin: 10px 5%;
+}
+
+.login .logg input::placeholder {
+  color: #fff;
+}
+
+.login .logg input[type="radio"] {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.login .logg .input_field_col .form-check {
+  padding: 10px;
+}
+
+.login .logg .otp {
+  display: inline-flex;
+  width: 50%;
+  margin: 10px 25%;
+}
+
+.login .logg .otp input[type="text"] {
+  width: 40px;
+  height: 50px;
+  font-size: 26px;
+  padding: 5px 12px;
+}
+
+.login .logg .flexbox {
+  display: inline-flex;
+  width: 90%;
+  margin: 10px 5%;
+}
+
+.login .logg .flexbox input {
+  width: 5%;
+  height: 20px;
+  padding: 6px;
+  margin: 0;
+}
+
+.login .logg .flexbox input:focus-visible {
+  outline: 2px solid orange;
+}
+
+.login .logg .flexbox p {
+  padding: 0;
+  width: 95%;
+}
+
+.login .logg .flexbox p a {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.login .logg .social-icons {
+  width: 30%;
+  display: inline-flex;
+  margin: 10px 35%;
+}
+
+.login .logg .social-icons .fa {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #0bdada;
+  color: #0bdada;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.login .logg .social-icons .fa-facebook {
+  padding: 10px 12px;
+}
+
+.login .logg .playbtn {
+  width: 40%;
+  margin: 20px 30% 10px 30%;
+  color: #fff;
+  background: linear-gradient(315deg, #f8a11e 0%, #f4e221 100%);
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  padding: 13px 0px;
+}
+
+body {
+  font-family: "Futura PT";
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*background-color: #121212;*/
+  background: linear-gradient(140deg,
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(48, 1, 1));
+}
+
+.menu-item-main {
+  background-color: transparent;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-item a {
+  color: #222;
+  text-decoration: none;
+}
+
+/*update profile css*/
+.update {
+  color: #fff;
+  padding: 100px 20px 0 20px;
+  width: 50%;
+  margin: 0px 25%;
+}
+
+.update h1 {
+  text-align: center;
+}
+
+.update p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.update .col-md-12 {
+  padding: 0px 10% 0px 10%;
+}
+
+.update .col-md-12 input,
+.update .col-md-12 textarea {
+  width: 100%;
+  background-color: #211c22;
+  border: none;
+  margin-top: 0;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+}
+
+.update .col-md-12 .selectd {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.update .col-md-12 .btn {
+  background: linear-gradient(315deg, #f8a11e 0%, #f4e221 100%);
+  border: none;
+  width: 150px;
+  padding: 12px 0px;
+  text-align: center;
+}
+
+/*
+added css
+*/
+.loader {
+  background-color: #0a1823;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+  z-index: 9999999;
+}
+
+.loader.hide {
+  display: none;
+}
+
+.loader::before {
+  opacity: 0.4;
+}
+
+.spin {
+  opacity: 1;
+}
+
+.spin::before {
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #1c87c9;
+  border-radius: 50%;
+  z-index: 999999;
+  content: "";
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+
+.homelogo {
+  text-align: center;
+}
+
+.getuser {
+  padding: 0px;
+  height: auto;
+  width: 100%;
+  background-color: #1c1a25;
+  margin: 0px 0%;
+}
+
+.getuser .container {
+  background: linear-gradient(140deg,
+      rgb(0, 0, 0),
+      rgb(0, 0, 0),
+      rgb(48, 1, 1));
+  align-content: center;
+  justify-content: center;
+}
+
+.upgrade {
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  float: center;
+  background: linear-gradient(315deg, #f8a11e 0%, #f4e221 100%);
+  border-radius: 12px;
+  margin: 0px 10px;
+}
+
+.getuser .container img#user {
+  width: 8%;
+  height: 100px;
+  margin: 10px 46%;
+  padding: 10px;
+  border: 1px solid orange;
+  border-radius: 50%;
+  position: relative;
+}
+
+.getuser .images {
+  display: inline-flex;
+  width: 40%;
+  margin: 10px 30%;
+}
+
+.getuser .container button {
+  background: linear-gradient(315deg, #f8a11e 0%, #f4e221 100%);
+  border-radius: 12px;
+  width: 20%;
+  padding: 15px 20px;
+  font-size: 20px;
+  color: #fff;
+  margin: 20px 40%;
+  border: none;
+}
+
+.getuser hr {
+  height: 5px;
+  background: linear-gradient(315deg, #f8a11e 0%, #f4e221 100%);
+  width: 20%;
+  margin: 10px 40%;
+}
+
+.getuser p {
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  padding: 0 0 10px 0;
+}
+
+.getuser p a {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+.getuser h1 {
+  text-align: center;
+  color: #fff;
+  padding: 50px 0px 10px 0px;
+}
+
+.getuser h3 {
+  text-align: center;
+  color: #fff;
+  padding: 0px 0px 10px 0px;
+}
+
+.getuser .images a {
+  width: 50%;
+}
+
+.getuser .images a img {
+  width: 95%;
+  height: auto;
+  margin: 1% 0% 0px 5%;
+}
+
+.outer {
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* this is for profile page css */
+.profile {
+  padding: 50px 0px 0px 0px;
+  margin: 0px 0;
+  background: linear-gradient(180deg,
+      #f4d42b -96.12%,
+      rgba(246, 173, 27, 0) 72.13%);
+}
+
+.profile img {
+  width: 100%;
+  margin: 0;
+}
+
+.profile-child {
+  width: 60%;
+  margin: 5% 20%;
+  display: inline-block;
+}
+
+.profile-child .pcup {
+  display: inline-flex;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.profile-child .pcup img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 30px 0 20px 12%;
+}
+
+.profile-child .pcup img.editicon {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+}
+
+.profile-child .pcup1 {
+  display: inline-block;
+  margin: 4% 0;
+}
+
+.profile-child .pcup1 input {
+  width: 85%;
+  margin: 0px 10% 20px 5%;
+  border: 2px solid #f6ad1b;
+  border-radius: 60px;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 20px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.Currentsubscription {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid orange;
+  margin: 1rem 15%;
+  padding: 0.5rem;
+}
+.profile .profile-child .probtn{
+  border-radius: 20px;
+border: 2px solid #FA0;
+background: linear-gradient(277deg, rgba(0, 0, 0, 0.00) 0%, #362502 48.96%, rgba(0, 0, 0, 0.00) 100%);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+padding: 10px 50px;
+color: #fff;
+width: 30%;
+font-size: 18px;
+margin: 20px 35%;
+}
+.profile .profile-child .probtn:hover{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #362502 48.96%, rgba(0, 0, 0, 0.00) 100%);
+}
+.subscriptionLogo {
+  margin: 0px 1rem;
+}
+
+.currentSubscription1 {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  padding-top: 15px;
+}
+
+.currentValidityDate {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(246, 173, 27, 1);
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+.home {
+  padding: 10px 0px;
+  margin: 0px;
+  /* background-color: #1c1a25; */
+  background: linear-gradient(277deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      #362502 48.96%,
+      rgba(0, 0, 0, 0.8) 100%);
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.header {
+  font-family: Arial;
+  padding: 0px 20px 10px 20px;
+  font-family: "Futura PT Demi";
+  width: 100%;
+  top: 0;
+  z-index: 99999;
+  left: 0;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  background: rgba(23, 27, 34, 0.2);
+}
+
+.header .logo {
+  width: 140px;
+  height: 45px;
+  margin: 1rem 0rem;
+}
+
+.header .install {
+  margin: 1.4% 0 0 76%;
+  width: 160px;
+  padding: 0;
+  cursor: pointer;
+  height: 50px;
+}
+
+.header .install:hover,
+.header .menubar:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.header .topnav.up {
+  margin: 1% 0 0 70%;
+}
+
+.header .topnav.bot {
+  display: inline-flex;
+}
+
+.header .topnav.bot img {
+  width: auto;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.header .topnav.up .in {
+  padding: 0 0 0 10px;
+}
+.header .topnav.up .in p{
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.header .sidenav .topnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -0.5rem;
+}
+
+.header .menubar {
+  width: 35px;
+  margin: 20px 15px 15px 0;
+  height: 35px;
+  cursor: pointer;
+}
+
+/*slider css*/
+.banner {
+  margin: 60px 0 0 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.banner .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.banner .swiper-slide {
+  height: 600px;
+  opacity: 0.7;
+  margin: 0% 0px 0px 0;
+  border-radius: 8px;
+  padding: 0px;
+}
+
+.banner .swiper-slide-active {
+  color: #fff;
+  margin: 0px 0 0 0;
+  z-index: 99;
+  border-radius: 12px;
+  opacity: 1;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.banner .swiper-button-prev {
+  position: absolute;
+  background-image: url("../assets/image/prev-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.banner .swiper-button-next {
+  position: absolute;
+  background-image: url("../assets/image/next-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.banner .swiper-slide a {
+  height: 70%;
+  margin: 1% 2%;
+}
+.swiper-pagination-bullets {
+  display: none;
+}
+.banner .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.banner .swiper-slide-active a {
+  width: 100%;
+  height: 74%;
+  border-radius: 12px;
+  transform: scale(1.3);
+}
+
+.banner .swiper-slide-active a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/*css for payments */
+.payment {
+  height: auto;
+  padding: 100px 20px 20px 20px;
+  background-color: #000;
+}
+
+.payment .row {
+  height: auto;
+}
+
+.payment .row .inner {
+  border-radius: 12px;
+  width: 90%;
+  background-color: #0a1823;
+  padding: 0;
+  display: inline-flex;
+  margin: 10px 8% 0 2%;
+}
+
+.payment .row .inner .innerchild {
+  width: 70%;
+  margin: 0;
+  padding: 0px 10px;
+  display: inline-flex;
+}
+
+.payment .row .inner .innerchild .title {
+  display: inline-block;
+}
+
+.payment .row .inner .innerchild .title h2 {
+  margin: 15px 0 10px 0;
+}
+
+.payment .row .inner .innerchild .title p {
+  font-size: 16px;
+  color: #ccc;
+  padding: 0px 10px;
+}
+
+.payment .row .inner .image {
+  width: auto;
+  height: 100px;
+  border-radius: 12px;
+  padding: 0px;
+  margin: 10px 2%;
+}
+
+/*payment paytm css*/
+
+.payment .paytm_option {
+  padding: 20px 20px;
+  width: 35%;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.payment .paytm_option img {
+  margin-left: -10px;
+  width: 30%;
+  height: auto;
+}
+
+.payment .paytm_option ul {
+  padding: 0 5px;
+}
+
+.payment .paytm_option ul li {
+  padding: 20px 10px 5px 0px;
+  border-bottom: 1.5px solid #ccc;
+  font-family: sans-serif;
+  list-style-type: none;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 550;
+}
+
+.payment .paytm_option ul li .fa {
+  padding-right: 10px;
+}
+
+.stripe {
+  color: #fff;
+}
+
+/*search bar*/
+.header_search {
+  width: 100%;
+  height: 90vh;
+  padding: 80px 20px 20px 20px;
+  margin: 0;
+  display: inline-block;
+}
+
+.header_search .child {
+  width: 100%;
+  padding: 10px;
+}
+
+.header_search .child input {
+  width:100%;
+  background-color: transparent;
+  padding: 10px 50px;
+  outline: none;
+  border-left: 0px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.header_search .header-menu {
+  display: inline-flex;
+  padding: 0px 0;
+  color: #fff;
+  font-size: 19px;
+}
+
+.header_search .header-menu a {
+  text-decoration: none;
+  padding: 0;
+  color: #fff;
+}
+
+.header_search .header-menu .fa {
+  padding: 0px 5px 0 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.header_search .child .fa-search {
+  padding: 15px 15px 15px 10px;
+  margin: 0px 10px;
+  position: absolute;
+  color: #fff;
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+.topnav .in img{
+  border-radius: 32px;
+  margin-left: 160px;
+  margin-top: 0px;
+  width: 45px;
+  height: 45px;
+}
+@media screen and (max-width: 600px) {
+
+  .ch input{
+    border: 2px solid orange;
+    margin-top: 0px;
+  }
+  .topnav .in img{
+    border-radius: 32px;
+    margin-left: 50px;
+  }
+  .topnav{
+    margin-top:0px;
+  }
+  .topnav .in p{
+    padding: 0;
+    margin: 0;
+  }
+  .topnav .in p:nth-child(1){
+    font-size: 20px;
+  }
+  .payment .row .inner {
+    width: 98%;
+    margin: 0px 1%;
+  }
+  
+  .payment .row .inner .innerchild {
+    width: 100%;
+    margin: 0;
+    padding: 0px 10px;
+  }
+  .quote {
+    width: 90%;
+    margin: 0rem 5%;
+  }
+  .header .topnav.up {
+    margin: 4% 0px 0 16%;
+  }
+  
+.header .topnav.up .in {
+  padding: 0 0 0 10px;
+}
+.header .topnav.up img{
+  width: 45px;
+  height: 45px;
+}
+.header .topnav.up .in p{
+  font-size: 24px;
+  padding: 5px 0;
+}
+/* this is for profile page css mobile */
+.profile {
+  padding: 100px 0px 0px 0px;
+  margin: 0px 0;
+  background: linear-gradient(180deg,
+      #f4d42b -96.12%,
+      rgba(246, 173, 27, 0) 72.13%);
+}
+
+.profile img {
+  width: 100%;
+  margin: 0;
+}
+
+.profile-child {
+  width: 100%;
+  margin: 5% 0%;
+  display: inline-block;
+}
+
+.profile-child .pcup {
+  display: inline-flex;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.profile-child .pcup img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 20px 0 20px 4%;
+}
+
+.profile-child .pcup img.editicon {
+  position: absolute;
+  bottom: 20px;
+  left: 70px;
+  width: 40px;
+  height: 40px;
+}
+
+.profile-child .pcup1 {
+  display: inline-block;
+  margin: 4% 0;
+}
+
+.profile-child .pcup1 input {
+  width: 96%;
+  margin: 0px 2% 20px 2%;
+  border: 2px solid #f6ad1b;
+  border-radius: 60px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 20px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.Currentsubscription {
+  display: flex;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid orange;
+  margin: 1rem 2.5%;
+  padding: 0.5rem;
+}
+.Currentsubscription p.currentValidityDate{
+  font-size: 22px;
+  line-height:30px;
+}
+
+.profile .profile-child .probtn{
+  width: 60%;
+  font-size: 18px;
+  margin: 20px 20%;
+  padding: 15px;
+}
+.product_item_list .product_item {
+  margin: 0px 5px;
+  overflow: hidden;
+}
+.product_item_list .product_item p{
+  /* margin: 0px 5px; */
+  font-size: 17px;
+  padding:0;
+  margin: 0 0 20px 0;
+  width: 100%;
+  text-align: left;
+}
+.product_item_image {
+  width: 170px;
+  position: relative;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+  .header .logo {
+    width: 150px;
+    height: auto;
+    margin: 15px 0;
+  }
+
+  .header .install {
+    margin: 5% 0 0 5%;
+    width: 160px;
+    padding: 0;
+    cursor: pointer;
+    height: 50px;
+  }
+
+  /*banner media css*/
+  .banner {
+    margin: 70px 0 20px 0;
+  }
+
+  .banner .swiper-slide {
+    height: 260px;
+    opacity: 0.7;
+    margin: 0;
+    border-radius: 8px;
+    padding: 0px;
+  }
+
+  .banner .swiper-slide-active {
+    color: #fff;
+    margin: 0px 0 0 0;
+    z-index: 99;
+    border-radius: 12px;
+    opacity: 1;
+  }
+
+  .banner .swiper-slide a {
+    height: 70%;
+    margin: 1% 0%;
+  }
+
+  .banner .swiper-slide-active a {
+    width: 100%;
+    height: 64%;
+    border-radius: 12px;
+    transform: scale(1.5);
+  }
+
+  .FooterMain {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    border-radius: 0px;
+    border: none;
+    border-top: 1px solid rgba(255, 170, 0, 1);
+    background: linear-gradient(276.9deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        #362502 48.96%,
+        rgba(0, 0, 0, 0.6) 100%);
+    color: white;
+    bottom: 0rem;
+    margin: 0;
+    position: fixed;
+    z-index: 9999;
+    padding: 5px 0;
+  }
+
+  .FooterMain img.LogoFooter {
+    height: 35px;
+    width: 35px;
+  }
+  .FooterMain img.LogoFooter.sea {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+/* date  18/10/2023 */
+/* this is for termsandcondition page css */
+.Termsandcondition_css {
+  margin: 0px;
+  padding: 6rem 5rem 0 5rem;
+  background-color: black;
+}
+
+.Termsandcondition_css p {
+  color: white;
+  text-align: left;
+}
+
+.termsandconditionHeader h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: orange;
+}
+
+.Termsandcondition_css h5 {
+  color: orange;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .Termsandcondition_css {
+    margin: 0px;
+    padding: 6rem 0.3rem;
+    background-color: black;
+    text-align: left;
+  }
+
+  .termsandconditionHeader h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: orange;
+  }
+}
+
+/* 😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃😃 */
+
+
+  /* this is for episode and webseries */
+  /* seasons and episode */
+  .SeasonsAndEpisodesInformation{
+    color: white;
+    padding: 0px;
+    margin: 0px;
+  }
+  .SeasonsAndEpisodes1{
+    padding: 0.5% 4% 3% 4%;
+    display: flex;
+    gap: 1rem;
+  }
+  .SeasonsAndEpisodes2{
+    border-radius: 12px;
+    padding: 1rem;
+    background: var(--black-10, #1A1A1A);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 67%;
+  height: max-content;
+  }
+  .SeasonsAndEpisodes2 .seasonHeader{
+    color: var(--absolute-white, #FFF);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  }
+  .episodeInformation{
+    width: 100%;
+    height: max-content;
+    border-radius: 12px;
+  border: 1px solid rgba(255, 170, 0, 1);
+  background: var(--black-06, #0F0F0F);
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  }
+  .SeasonsAndEpisodes2 >.episodeInformation >.episodeInformation1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .episodeInformation02{
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    color: var(--grey-60, #999);
+  }
+  .episodeInformation1 .episodeInformation03{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(255, 170, 0, 1);
+  }
+  .episodeInformation1 .episodeInformation03 img{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    border: 2px solid rgba(255, 170, 0, 1);
+  }
+  .hrClassColor{
+    border: 1px solid rgba(255, 170, 0, 1);
+    margin: 1rem 0rem;
+  }
+  .pkplayerSymboleMain{
+    position: relative;
+  }
+ .pkplayerSymbole1{
+    position: absolute;
+    top: 40%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+  }
+  .pkplayerSymboleMain img{
+    border-radius: 12px;
+  }
+  .episodeDetail{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .episodeDetail .episodeDetail3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .episodeDetail .episodeDetail2{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .episodeDetail2 .episodeDetail4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 170, 0, 1);
+    background: var(--black-08, #141414);
+    padding: 0.3rem 0.4rem;
+    color: var(--grey-60, #999);
+    font-size: 12px;
+    margin-top: -20px;
+  }
+  .episodeDetail2 .episodeDetail5{
+    color: #ccc;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0px;
+    line-height:auto;
+  }
+  
+  /* ------ */
+  .jalvaEpisode{
+    width: 30vw;
+    height: max-content;
+    padding: 1rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 12px;
+    background: var(--black-10, #1A1A1A);
+    font-size: 0.9rem;
+  }
+  
+  .jalvaEpisode .jalvaEpisode1{
+    display: flex;
+    gap: 1rem;
+    font-size: 15px;
+  }
+
+  .jalvaEpisode .jalvaEpisode2{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 0.5rem;
+  }
+  .jalvaEpisode .jalvaEpisode2 .jalvaEpisode3 > p{
+  border-radius: 6px;
+  border: 1px solid rgba(255, 170, 0, 1);
+  background: var(--black-08, #141414);
+  padding: 0.4rem 0.8rem;
+  }
+  .jalvaEpisode .jalvaEpisode4, .jalvaEpisode5{
+    display: flex;
+    gap: 0rem;
+    font-size: 15px;
+    margin: 0;
+  }
+
+@media screen and (max-width: 767px) {
+  .pkplayerSymbole1{
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+  }
+   .hide{
+    display: none;
+   }
+   .hidden{
+    display: block;
+   }
+    /* seasons and episode */
+    .SeasonsAndEpisodesInformation{
+      color: white;
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+    }
+    .SeasonsAndEpisodes1{
+      padding: 1rem 0.5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      /* border: 1px solid #fe0101; */
+    }
+    .SeasonsAndEpisodes2{
+      border-radius: 12px;
+      padding: 0rem;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      height: max-content;
+      margin: 0;
+    }
+    .SeasonsAndEpisodes2 .seasonHeader{
+      color: var(--absolute-white, #FFF);
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 600;
+      padding: 0 10px;
+    }
+    .episodeInformation{
+      width: 100%;
+      height: max-content;
+      border-radius: 12px;
+      background-color: transparent;
+      padding: 1rem 1rem;
+      justify-content: space-between;
+      align-items:center;
+      text-align: left;
+      align-self: stretch;
+    }
+    .additionalDetail{
+      width: 100%;
+    height: max-content;
+    padding: 1rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 12px;
+    background: var(--black-10, #1A1A1A);
+    font-size: 0.9rem;
+    }
+    .additionalDetail .additionalDetail1{
+      display: flex;
+      gap: 1rem;
+ 
+      font-size: 15px;
+    }
+    .additionalDetail .additionalDetail1 > h1, p {
+      text-align: left;
+      padding: 0rem;
+      width: 100%;
+  }
+    .additionalDetail .additionalDetail2{
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+      gap: 0.5rem;
+    }
+    .additionalDetail .additionalDetail2 .additionalDetail3{
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    border: 1px solid rgba(255, 170, 0, 1);
+    background: var(--black-08, #141414);
+    padding: 0.2rem 0.5rem;
+    }
+    .SeasonsAndEpisodes2 >.episodeInformation >.episodeInformation1{
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+    }
+    .episodeInformation02{
+      font-size: 1rem;
+      margin-left: 1rem;
+      color: var(--grey-60, #999);
+    }
+    .episodeInformation1 .episodeInformation03{
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border: 2px solid rgba(255, 170, 0, 1);
+    }
+    .hrClassColor{
+      border: 1px solid rgba(255, 170, 0, 1);
+      margin: 1rem 0rem;
+    }
+    .pkplayerSymboleMain{
+      width: 100%;
+      margin: 0;
+    }
+    .pkplayerSymboleMain .pkplayerSymbole{
+      width: 100%;
+      height: 230px;
+    }
+    .pkplayerSymboleMain{
+      position: relative;
+      display: block;
+    }
+ 
+    .episodeDetail{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .episodeDetail .episodeDetail3{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .episodeDetail .episodeDetail2{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .episodeDetail2 .episodeDetail4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    border: 1px solid rgba(255, 170, 0, 1);
+    background: var(--black-08, #141414);
+    padding: 0.3rem 0.4rem;
+    color: var(--grey-60, #999);
+    font-size: 12px;
+    }
+    .episodeDetail2 .episodeDetail5{
+    font-size: 16px;
+    color: #ccc;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    }
+
+
+    .jalvaEpisode{
+      width: 100%;
+      height: max-content;
+      padding: 1rem;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      border-radius: 12px;
+      background: transparent;
+      font-size: 0.9rem;
+      border: 1px solid rgba(255, 170, 0, 1);
+    }
+    
+    .jalvaEpisode .jalvaEpisode1{
+      display: flex;
+      gap: 1rem;
+      color: var(--grey-60, #999);
+      font-size: 15px;
+    }
+  
+    .jalvaEpisode .jalvaEpisode2{
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+      gap: 0.5rem;
+    }
+    .jalvaEpisode .jalvaEpisode2 .jalvaEpisode3 > p{
+    border-radius: 6px;
+    border: 1px solid rgba(255, 170, 0, 1);
+    background: var(--black-08, #141414);
+    padding: 0.4rem 0.8rem;
+    }
+    .jalvaEpisode .jalvaEpisode4, .jalvaEpisode5{
+      display: flex;
+      gap: 1rem;
+      color: var(--grey-60, #999);
+      font-family: Manrope;
+      font-size: 15px;
+    }
+   
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .episodeDetail{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  }
+
+  /*media for iphone se*/
+  @media screen and (max-width: 390px) {  
+    .FooterMain img.LogoFooter.see {
+      height: 40px;
+      width: 40px;
+      margin: 0px 0 -5px 0;
+    }
+    .header .install {
+      margin: 5% 0 0 5%;
+      width: 150px;
+      padding: 0;
+      cursor: pointer;
+      height: 45px;
+    }
+    .header .logo {
+      width: 130px;
+      height: auto;
+      margin: 10px 0;
+    }
+    .header .menubar {
+      width: 30px;
+      margin: 18px 15px 15px 0;
+      height: 30px;
+      cursor: pointer;
+    }
+    .FooterMain {
+      width: 100%;
+      height: 70px;
+      border: none;
+      border-top: 1px solid rgba(255, 170, 0, 1);
+      margin: 0;
+      padding: 0px 0;
+      position: fixed;
+    }
+  
+    .FooterMain img.LogoFooter {
+      height: 30px;
+      width: 30px;
+    }
+    
+    .FooterMain img.LogoFooter.ext,.FooterMain img.LogoFooter.sea  {
+      height: 25px;
+      width: 25px;
+      margin: 3px 0;
+    }
+    .sidenav ul li {
+      font-size: 20px;
+      color: #fa0;
+      margin: 5px 0 0 0px;
+    }
+    
+    .sidenav ul li a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+    /* ---------------------------------------- */
+    .detail_com{
+      width:100%;
+      margin: 0 ;
+      padding: 1rem 5rem 5rem 5rem;
+      align-content: center;
+      justify-content: center;
+    }
+    .detail_comn{
+      padding:20px 10px;
+    }
+    .detail_comn p{
+     padding: 0px 10px;
+     margin: 0;
+     color: #ccc;
+     font-size: 16px;
+    }
+    .detail_com p{
+      text-align: center;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+    .errorpage{
+      color: #fff;
+    }
+    .errorpage h2{
+      text-align: center;
+      margin-top: 50%;
+    }    
+    .errorpage p{
+      text-align: center;
+    }
