@@ -1,0 +1,98 @@
+.content {
+  background-image: linear-gradient(135deg, #eee 10%, #fff 100%);
+  padding: 1% 1%;
+}
+.numbers{
+  width: 100%;
+  margin: 0px 0% 10px 0%
+}
+/*.numbers li{
+  border-left: 1px solid #111;
+  padding: 8px 15px;
+  border-collapse: collapse;
+  list-style-type: none;
+  margin: 0;
+}
+.numbers li:nth-child(1){
+  background-color: #111;
+  color: #fff;
+}
+.numbers .Active{
+  background-color: #111;
+  color: #fff;
+}*/
+
+.content p .fa {
+  padding: 0px 5px;
+}
+.content label {
+  padding: 5px 0px 10px 0px;
+  color: #222;
+}
+.content label .fa {
+  padding: 0px 5px 0px 0px;
+}
+.content table tbody td{
+  font-size: 17px;
+}
+.content table tbody td .fa {
+  padding: 10px;
+  margin-right: 5px;
+}
+.content table tbody td .fa-ellipsis-h {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.content table tbody td .fa:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  background-color: #fff;
+}
+.listnone {
+  list-style-type: none;
+  border: 1px solid #eee;
+  width: 0px;
+  height: 0px;
+  background-color: #eee;
+  transition: 0.1s linear;
+  overflow: hidden;
+  padding: 0px;
+  position: absolute;
+  border-radius: 4px;
+  margin: 10% 0 0 60%;
+}
+
+.list {
+  list-style-type: none;
+  border: 1px solid #eee;
+  width: 250px;
+  height: 300px;
+  overflow-y: scroll;
+  background-color: #fff;
+  transition: 0.1s linear;
+  overflow: hidden;
+  position: absolute;
+  margin: 10% 0px 0px 60%;
+  border-radius: 12px;
+  
+}
+
+.list li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px 10px 10px 15px;
+  font-size: 16px;
+  color: #222;
+  width :100%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+.list li:hover {
+background-color: #eee;
+}
+.list li .fa{
+  padding: 5px 10px;
+}
+

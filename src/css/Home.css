@@ -1,0 +1,548 @@
+/*                              @Author : {}
+* Copyright (c) 2021, by Tush Entertainment
+* Permission to use, copy, modify or distribute this software in binary or source form
+* for any purpose is allowed only under explicit prior consent in writing from Tush Entertainment.
+* THE SOFTWARE IS PROVIDED "AS IS" AND TUSH ENTERTAINMENT DISCLAIMS
+* ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+* WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL TUSH ENTERTAINMENT
+* BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+* DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+* PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+* ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+* SOFTWARE.THIS SOFTWARE IS PROTECTED BY COPYRIGHT LAWS FROM INDIA AND USA.
+* ANY OR ALL PART OF THIS SOFTWARE OR SOURCES CANNOT BE USED FOR ANY TYPES OF
+* PRODUCTS WHICH IS DIRECTLY AND INDIRECTLY AFFECTING THE LIFE OF HUMANS.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Poppins:ital,wght@0,600;1,300&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.con {
+  width: 100%;
+  display: inline-flex;
+  margin: 0;
+  height: 750px;
+  overflow: hidden;
+}
+.con .home {
+  width: 3.3%;
+  transition: 0.3s;
+  height: 100%;
+}
+.con .home.active {
+  width: 15%;
+  margin: 0px 0% 0px 0%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.con .home .SideNav {
+  width: 100%;
+  height: 92%;
+  overflow-y: scroll;
+  margin: 0% 0 0 0px;
+  display: inline-block;
+  overflow-x: hidden;
+  background-color: #000;
+  transition: 0.5s;
+}
+.con .home.active .SideNav {
+  width: 100%;
+  height: 80%;
+  transition: 0.5s;
+  background-color: #000;
+  overflow-y: scroll;
+}
+.con .home .SideNav::-webkit-scrollbar{
+  display: none;
+}
+
+.home .SideNav:hover {
+  width: 100%;
+  display: block;
+}
+.home .logo.active {
+  width: 100%;
+  height: 8%;
+  margin: 0px;
+  background-color: #000;
+  padding: 0px;
+}
+.home.active .logo {
+  background-color: #000;
+  height: 18%;
+}
+.con .home .logo.active img {
+  width: 80%;
+  margin: 0px 10%;
+  height:90%;
+  padding: 10px 0px 5px 0px;
+}
+.con .home.active .logo img {
+  width: 98%;
+  margin: 20% 1%;
+  border-radius: 32px;
+  height: 40%;
+  padding: 0px 0px 0px 0px;
+}
+.home .SideNav .flex .fa-file-image,
+.fa-bell,
+.fa-user-tie {
+  margin-right: 5px;
+}
+
+.home.active .SideNav .flex {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  padding: 8px 5px 0px 0px;
+  border-top: 1px solid #222;
+  margin: 0px;
+  color: #fff;
+}
+
+.home .SideNav #flexdown {
+  display: inline-flex;
+}
+
+.home .SideNav .flex:hover {
+  background-color: #eee;
+  color: #000;
+}
+.home .SideNav .flex:hover p, .home .SideNav .flex:hover .fa,.fas{
+  color: #000;
+}
+.home.active .SideNav .flex:hover .fa,.fas{
+  color: #000;
+}
+.home .SideNav .flex p {
+  padding: 3px 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.home .SideNav .flex link p {
+  text-decoration: none;
+  font-weight: 300;
+}
+.home .SideNav .flex link {
+  text-decoration: none;
+  outline: none;
+}
+.home .SideNav .flex .fa,
+.fas {
+  padding: 10px 5px 0px 15px;
+  font-size: 20px;
+  color: #fff;
+}
+.home.active .SideNav .flex .fa,
+.fas {
+  padding: 5px 5px 0px 15px;
+  font-size: 20px;
+  color: #fff;
+}
+.subcr {
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  overflow-y: scroll;
+  margin: 0px;
+  padding: 0px;
+}
+.subcr::-webkit-scrollbar {
+  display: block;
+}
+.subcr .head {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+}
+.subcr .head .dashhead {
+  width: 50%;
+  margin: 0px;
+  padding: 0px 10px 10px 10px;
+  display: flex;
+}
+.subcr .head .dashhead .fa {
+  color: #000;
+  font-size: 18px;
+  padding: 2px 10px 0px 0px;
+}
+.subcr .head .dashhead h3 {
+  font-size: 18px;
+  color: #111;
+  padding: 0px 0px 0px 10px;
+  margin: 0px;
+  font-weight: 470;
+}
+.subcr .head .userhead {
+  width: 50%;
+  margin: 0px;
+  padding: 0px 10px 10px 10px;
+}
+.subcr .head .userhead p {
+  text-align: right;
+  padding: 10px 10px;
+  margin: 0px 0px 0px 0px;
+}
+.subcr .head .userhead p .fa {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 9px 10px;
+  margin: 0px 5px;
+}
+.subcr .head .userhead p .fa:hover {
+  background-color: #000;
+  color: #fff;
+}
+.subcr .row {
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.subcr .row .col-md-4 {
+  height: 125px;
+  margin: 0px 0px 0px 30px;
+  width: 30%;
+  padding: 0px 0px;
+  display: inline-block;
+  background-color: #eee;
+  border: 1px solid #eee;
+}
+.subcr .row .col-md-4 .up {
+  width: 100%;
+  height: 70%;
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+.subcr .row .col-md-4 .up .das1 {
+  width: 25%;
+  height: 100%;
+  padding: 0px 0px;
+  background-color: #000;
+  align-items: center;
+  justify-items: center;
+  margin: 0px;
+}
+.subcr .row .col-md-4 .up .das2 {
+  width: 75%;
+}
+
+.subcr .row .col-md-4 .das1 .fa {
+  font-size: 32px;
+  padding: 25px 35px;
+  color: #fff;
+}
+.subcr .row .col-md-4 .das1 .fas {
+  font-size: 32px;
+  color: #fff;
+  padding: 25px 30px;
+}
+.subcr .row .col-md-4 .das2 p {
+  font-size: 26px;
+  color: #333;
+  padding: 0px 10px;
+  text-align: right;
+  margin: 0px;
+}
+.subcr .row .col-md-4 .das2 p:nth-child(1) {
+  color: #aaa;
+  margin: 10px 0px 0px 0px;
+  font-weight: 300;
+  font-size: 16px;
+}
+.subcr .row .col-md-4 .low {
+  width: 100%;
+  height: 30%;
+  padding: 0px;
+  margin: 0%;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  border-collapse: collapse;
+}
+.subcr .row .col-md-4 .low .down {
+  height: 100%;
+  display: inline-flex;
+  background-color: #000;
+  color: #fff;
+  margin: 0px 0% 0px 60%;
+  width: 40%;
+  padding: 5px 10px;
+}
+.subcr .row .col-md-4 .low .down .fa {
+  color: #fff;
+  padding: 5px 10px 0px 10px;
+}
+.subcr .row .col-md-4 .low .down p {
+  color: #fff;
+  padding: 2px 0px;
+  font-size: 13.5px;
+}
+.dropdown-content {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  padding: 0px;
+  border: 1px solid #ccc;
+  color: #fff;
+  
+  margin: 50px 0px;
+  display: none;
+}
+.dropdown-content p {
+  margin: 0px 0px;
+  color: #fff;
+  padding: 0px;
+}
+
+/*subscription pages css here*/
+.sub {
+  width: 100%;
+  margin: 0px 0px;
+  padding: 0px;
+}
+.sub .row {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.sub .row .col-md-6 {
+  width: 49%;
+  height: 40px;
+  border-radius: 4px;
+  background: #000;
+  border: 1px solid #ccc;
+  margin: 5px 0px 5px 1%;
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+}
+.sub .row .col-md-6:nth-child(2) {
+  background: #aaa;
+}
+.sub .row .col-md-6 p {
+  color: #fff;
+  font-size: 18px;
+  padding: 0px 5px;
+}
+.sub .row .col-md-6 .fa {
+  color: #fff;
+  font-size: 20px;
+  padding: 4px 5px;
+}
+.sub h3 {
+  font-size: 19px;
+  color: #000;
+  padding: 20px 0px 10px 15px;
+  margin: 0px;
+  font-weight: 300;
+}
+.sub .container .table {
+  border: 1px solid #ccc;
+  margin: 0px 2%;
+  background: #fff;
+  width: 98%;
+}
+.sub .container .table th {
+  color: purple;
+}
+.sub .container .empty img {
+  width: 98%;
+  height: 500px;
+  margin: 10px 0% 10px 2%;
+}
+.sel {
+  width: 100%;
+  margin: 0px;
+  display: inline-flex;
+}
+.sel label {
+  width: 93%;
+  margin: 10px 0% 10px 2%;
+  padding: 0px;
+}
+.sel label select {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.sel .fa {
+  width: 5%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 440px) {
+  .con .home {
+    width: 50%;
+    margin: 0px 0% 0px 0%;
+    height: 100%;
+    transition: all 0.5s;
+
+    background-color: #fff;
+  }
+  .con .home.active {
+    width: 0%;
+  }
+  .subcr {
+    width: 100%;
+  }
+  .subcr .row {
+    margin: 20px 0px;
+    width: 100%;
+    display: grid;
+  }
+  .subcr .row .col-md-4 {
+    height: 125px;
+    margin: 0px 10px 15px 10px;
+    width: auto;
+  }
+  .subcr h3 {
+    font-size: 19px;
+    color: #111;
+    padding: 10px 0px 50px 10px;
+    margin: 0px;
+    font-weight: 470;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0px 0%;
+}
+.container-fluid .row {
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 10px 0px;
+}
+.container-fluid .row .col-md-6 {
+  margin: 0;
+}
+
+.graph .chart{
+  overflow-y:scroll;
+  font-size: 12px;
+}
+.graph .head{
+  padding: 10px 5px 5px 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  
+  
+}
+.graph .head p{
+ color: #222;
+ padding: 0px 0px;
+}
+.graph .head .col-md-6 span{
+font-size: 14px;
+width: 100%;
+padding: 10px 5px 0px 5px;
+margin:0px 0px 0px 0px;
+}
+.graph .col-md-3 .Paper {
+  list-style-type: none;
+  padding: 5px 0px;
+  width: 99%;
+  height: 185px;
+  overflow: scroll;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+.graph .drop{
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 3px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+}
+.graph .col-md-3 .Paper li {
+  padding: 7px 2px 7px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.graph .col-md-3 .Paper li:hover{
+  background-color: #f4f0ec;
+}
+.graph .col-md-3 .Paper li span{
+  padding: 0px 0px 0px 7px;
+  font-weight: 500;
+  text-align: center;
+  color: #555;
+  letter-spacing: .5px;
+}
+.graph .col-md-3 .Paper .icon{
+  color: #555;
+  font-size: 18px;
+}
+.graph .col-md-3 .Paper li.active{
+  background-color: #f4f0ec;
+}
+.graph .chart::-webkit-scrollbar{
+  display: none;
+}
+.graph .col-md-3 .Paper::-webkit-scrollbar{
+  display: none;
+}
+.graph .data{
+border:1px solid #ccc;
+height: 320px;
+margin: 0px 0px 10px 0px;
+padding: 10px;
+border-radius: 12px;
+}
+@media screen and (max-height: 720px) {
+  .con {
+    width: 100%;
+    display: inline-flex;
+    margin: 0;
+    height: 720px;
+    overflow: hidden;
+  }
+  
+}
+@media screen and (max-height: 680px) {
+  .con {
+    width: 100%;
+    display: inline-flex;
+    margin: 0;
+    height: 660px;
+    overflow: hidden;
+  }
+  
+}
+@media screen and (max-height: 650px) {
+  .con {
+    width: 100%;
+    display: inline-flex;
+    margin: 0;
+    height: 640px;
+    overflow: hidden;
+  }
+  
+}
+@media screen and (max-height: 600px) {
+  .con {
+    width: 100%;
+    display: inline-flex;
+    margin: 0;
+    height: 600px;
+    overflow: hidden;
+  }
+  
+}

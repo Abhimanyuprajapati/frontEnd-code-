@@ -1,0 +1,140 @@
+.con {
+  background-color: #eee;
+}
+.showoption {
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.showoption.active {
+  height: 220px;
+  width: 170px;
+  padding: 10px;
+  border-radius: 0px;
+  background-color: #000;
+  position: absolute;
+  margin: 40px 0px 0px 75%;
+  border: 1px solid #eee;
+}
+.showoption li {
+  list-style-type: none;
+  padding: 10px 0px 0px 3px;
+  font-size: 16px;
+  text-align: left;
+  margin: 0;
+  letter-spacing: 0.2px;
+  color: #fff;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+.table thead tr th .fa-ellipsis-h {
+  padding: 5px;
+  border-radius: 6px;
+}
+.table tbody tr td .fa-ellipsis-h , .fa-trash , .fa-edit{
+  padding: 5px;
+  border-radius: 6px;
+}
+.table thead tr th .fa-ellipsis-h:hover,
+.table tbody tr td .fa-ellipsis-h:hover {
+  background-color: #ddd;
+}
+
+.content {
+  margin: 0px 0%;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+  padding: 0px 0px;
+  overflow-x: hidden;
+}
+.fa-globe {
+  color: #000;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.content label {
+  margin: 10px 10px 0px 3px;
+  font-size: 14x;
+}
+.content p {
+  padding: 5px;
+  margin: 0px;
+}
+
+.content #pills-home {
+  overflow-y: scroll;
+}
+.nav {
+  margin: 0px 0px 0px 0px;
+}
+.contents {
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 0px;
+}
+.content #pills-home ul {
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  display: inline-flex;
+}
+.content #pills-home ul li {
+  padding: 10px 15px;
+  border-radius: 32px;
+  text-align: center;
+  color: #111;
+  background-color: #ddd;
+  margin: 0px 5px;
+  list-style-type: none;
+}
+#gfhds {
+  width: 350px;
+  height: 200px;
+  border: 2px solid #ccc;
+}
+.stack {
+  margin: 10px 0px;
+  padding: 5px;
+}
+.tab-content {
+  overflow-x: hidden;
+}
+.tab-pane table {
+  overflow-x: hidden;
+}
+.tab-content .tab-pane table .parent {
+  display: flex;
+  width: 90%;
+  overflow-x: scroll;
+}
+.tab-content .tab-pane table .parent::-webkit-scrollbar {
+  display: none;
+}
+.parent .seasonname {
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  background-color: #eee;
+  margin: 0px 5px;
+  border-radius: 4px;
+
+  display: flex;
+}
+.parent .seasonname .fa {
+  color: #222;
+  padding: 10px;
+
+}
+.list li .mdicon , .listnone li .mdicon{
+  padding: 0px 5px 0 0;
+  margin: 0;
+  width : 30px;
+  height: 30px;
+}
+.list li span{
+  padding: 2px 0px 0px 5px;
+}
+

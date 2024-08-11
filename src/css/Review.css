@@ -1,0 +1,7 @@
+.container .col-md-3 {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 5px 0px;
+  padding: 0px 10px;
+}

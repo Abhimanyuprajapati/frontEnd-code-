@@ -1,0 +1,452 @@
+/*                              @Author : {}
+* Copyright (c) 2021, by Tush Entertainment
+* Permission to use, copy, modify or distribute this software in binary or source form
+* for any purpose is allowed only under explicit prior consent in writing from Tush Entertainment.
+* THE SOFTWARE IS PROVIDED "AS IS" AND TUSH ENTERTAINMENT DISCLAIMS
+* ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+* WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL TUSH ENTERTAINMENT
+* BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+* DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+* PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+* ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+* SOFTWARE.THIS SOFTWARE IS PROTECTED BY COPYRIGHT LAWS FROM INDIA AND USA.
+* ANY OR ALL PART OF THIS SOFTWARE OR SOURCES CANNOT BE USED FOR ANY TYPES OF
+* PRODUCTS WHICH IS DIRECTLY AND INDIRECTLY AFFECTING THE LIFE OF HUMANS.
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+/* loading css */
+.loader{
+  font-size: 48px;
+  color: #000000;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+}
+.loader:after{
+  content: '';
+  height: 10px;
+  width:0%;
+  display: block;
+  background: #ff0000;
+  animation: 5s lineGrow linear infinite;
+}
+
+@keyframes lineGrow {to{width: 100%;}}
+
+/* ----------- */
+.Login .Form form .form-check{
+  padding: 10px 0px 0px 30px;
+}
+.Login .Form form .form-check label {
+color: #fff;
+}
+#spin{
+  width: 100%;
+  height: 100%;
+  background-color: #2222;
+  z-index: 99;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.show_n{
+  display: inline-flex;
+}
+.show_n .fa-close{
+  font-size: 22px;
+  right: 0;
+  top: 0;
+  padding: 0px 10px 0px 0px;
+  margin:0px 10px;
+}
+#spinround{
+  z-index: 99999;
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #fff;
+  border-bottom-color: #F6AD1B;
+  border-radius: 50%;
+  z-index: 999999;
+  content: "";
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+.search_div{
+  position: relative;
+}
+.search_div .fa-search.abs{
+  padding: 10px 10px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+.form-control.abs{
+  padding-left: 30px;
+}
+.users{
+  display: inline-block;
+}
+.users .btn{
+margin: 10px 10px 0px 0px;
+padding: 5px 10px;
+}
+.users .fa-search{
+  padding: 10px 5px;
+}
+.users .search{
+  display: inline-flex;
+  width: 100%;
+}
+.users .search input{
+width: 60%;
+}
+.users .search .btn{
+  width : auto;
+  background-color: #F6AD1B;
+  color: #fff;
+  border:none;
+  margin: 0px 1%;
+}
+.users .result{
+  width: 80%;
+  margin: 20px 20% 10px 0px;
+  background-color: #fff;
+  border-radius: 4px;
+  height: auto;
+}
+.users .result p{
+  padding: 0px 0px;
+  color: #222;
+  width :100%;
+  display: inline-flex;
+  border:1px solid #ccc;
+}
+.users .result button{
+  margin: 10px 0px 10px 10px;
+}
+.users .result p span{
+  width: 30%;
+  padding: 10px 10px;
+}
+.users .result p .child{
+  width: 70%;
+  background-color: #fff;
+  color: #111;
+  padding: 10px;
+  margin: 0;
+}
+.users .result p .child.green{
+  background-color: #25D366;
+  color: #fff;
+}
+.users .result p .child.red{
+  color: #fff;
+  background-color: #D2042D;
+}
+.users .result .ss{
+  width: 100%;
+  display: inline-flex;
+}
+.users .result .fa-close{
+right: 0;
+bottom: 0;
+margin : 0px 20px;
+padding: 10px 12px;
+background-color: #eee;
+border-radius: 50%;
+}
+.users .result .ss .pack{
+  border:1px solid #ccc;
+  width: 24%;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 12px;
+  margin: 10px 1%;
+}
+.users .result .ss .pack h2{
+font-size: 22px;
+}
+.users .result .ss .pack p{
+  font-size: 20px;
+  border:none;
+}
+.users .result .ss .pack button{
+  padding: 10px;
+  background-color: #F6AD1B;
+  border:none;
+  width: 95%;
+  margin: 10px 2.5%;
+  border-radius: 6px;
+  color: #fff;
+}
+.users .result .orders{
+  width: 95%;
+  height: auto;
+  padding: 25px 0px;
+  margin: 0px 2.5%;
+  
+}
+.users .orders button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.inapp h1{
+  font-size: 23px;
+  padding: 10px 5px;
+}
+
+.content .inner{
+  background-color: #eee;
+  
+  height: 100vh;
+  width :100%;
+}
+.content .inner .add{
+  background-color: #eee;
+  padding: 0px 20px;
+  margin:0;
+}
+
+.email_temp{
+  width: 70%;
+  border-radius: 12px;
+  height: 500px;
+  border:1px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+}
+
+
+#status span .fa{
+  padding: 0px 0px 0px 0px;
+  margin:-10px 5px 0px  5px;
+}
+#status span .fa.failure{
+  color: hsl(356, 72%, 48%);
+  padding:2px 6px;
+  font-size: 14px;
+  border-radius: 50%;
+  border: 2px solid #D2222D;
+}
+#status span .fa.success , .fa-check{
+  color: #239923;
+  border:2px solid #239923;
+  border-radius: 50%;
+  font-size: 14px;
+  padding:2px;
+
+}
+.path{
+  color: #333;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.leftpush {
+  padding-left: 10px;
+}
+.Login {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+  display: inline-block;
+}
+.Login .st {
+  width: 100%;
+  height: 50%;
+  background-color: #F6AD1B;
+  position: relative;
+}
+.Login .nd {
+  width: 100%;
+  height: 50%;
+  background-color: #eee;
+  position: relative;
+}
+.Login .Form {
+  position: absolute;
+  width: 27%;
+  margin: 10% 36.5%;
+  padding: 15px 20px;
+  background-color: #000;
+  height: 440px;
+  z-index: 10;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Login .Form form .radios {
+  width: 100%;
+  margin: 0px 0px 0px 0%;
+  padding: 10px 24px;
+}
+.Login .Form form .radios label {
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #111;
+  margin-top: 0px;
+}
+.Login .Form form p {
+  color: #111;
+}
+.Login .Form .logo {
+  width: 60%;
+  height:auto;
+  border-radius: 6px;
+  margin: 15% 20%;
+  
+}
+.form-group p {
+  padding: 0px 10px 0px 10px;
+}
+.form-group {
+  margin-top: 20px;
+  align-content: center;
+  justify-content: center;
+}
+.form-group button {
+  width: 100%;
+  margin: 0px 0%;
+}
+.form-group .btn {
+  background-color: #F6AD1B;
+  color: #fff;
+  padding: 10px 10px;
+  font-weight: 500;
+}
+.form-group .btn .fa{
+  padding: 5px 10px;
+}
+.form-group .btn:hover {
+  color: #F6AD1B;
+  background-color: #fff;  
+  border: 1px solid #F6AD1B;
+}
+.form-group .input-group-text {
+  padding: 13px 12px;
+}
+.Login .Form form .radios {
+  width: 100%;
+  padding: 0px 0px 0px 40px;
+  margin: 0px 0%;
+}
+.Login .Form form .radios input[type="radio"] {
+  border: 1px solid #ccc;
+  margin: 15px 5px 0px 5px;
+}
+.Login .Form form .radios label {
+  margin: 12px 4px 5px 0px;
+  font-size: 15px;
+  color: #fff;
+}
+.imagemulti {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0 2%;
+}
+.multi-preview {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 300px;
+  padding: 20px;
+  overflow-x: scroll;
+  margin: 0 0%;
+  display: inline-flex;
+}
+.multi-preview::-webkit-scrollbar {
+  display: none;
+}
+.multi-preview img {
+  width: 300px;
+  height: 210px;
+  margin: 10px 15px;
+  border: 1px solid #ccc;
+}
+.list li {
+  font-weight: 500;
+  display: inline-flex;
+}
+.list li .flex1 {
+  width: 10%;
+}
+.list li .flex2 {
+  width: 90%;
+}
+@media screen and (max-width: 1260px) {
+  .Login .Form {
+    width: 36%;
+    margin: 13% 32%;
+    padding: 20px;
+    background-color: #fff;
+    height: 50%;
+    align-content: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .Login .Form {
+    width: 40%;
+    margin: 13% 30%;
+    padding: 20px;
+    background-color: #fff;
+    height: 50%;
+    align-content: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .Login .Form {
+    width: 50%;
+    margin: 20% 25%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .Login .Form {
+    width: 70%;
+    margin: 20% 15%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .Login .Form {
+    position: absolute;
+    width: 90%;
+    margin: 40% 5%;
+    padding: 20px;
+    background-color: #fff;
+    height: auto;
+    z-index: 999999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}

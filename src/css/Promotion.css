@@ -1,0 +1,92 @@
+.pro {
+  width: 100%;
+  margin: 0px 0%;
+  padding: 10px;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: #eee;
+}
+.hide {
+  display: none;
+}
+.hidden {
+  display: none;
+  overflow: hidden;
+}
+.display {
+  display: block;
+}
+nav {
+  margin: 20px 0px 0px 0px;
+}
+.tab-content {
+  margin: 0px 0px;
+  padding: 10px;
+  background-color: #fff;
+}
+form .s {
+  margin-top: 10px;
+}
+.content.reel .table tbody tr td img {
+  width: 200px;
+  height: 280px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 12px;
+}
+.content.poster .table tbody tr td img {
+  width: 300px;
+  height: 180px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 12px;
+}
+.xtag {
+  display: inline-flex;
+  width: auto;
+}
+#tags {
+  border: 1px solid #eee;
+  border-radius: 32px;
+  background-color: #eee;
+  color: #222;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 5px 5px;
+}
+.promotion p {
+  padding: 2px;
+  margin: 0px;
+  color: #222;
+  font-size: 14px;
+}
+
+.promotion img {
+  width: 280px;
+  height: 380px;
+  border-radius: 4px;
+  margin: 10px 0px 5px 0px;
+}
+.pro label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  padding: 5px 0px 0px 0px;
+  margin: 0px;
+}
+.pro label .fa,
+.fas {
+  color: #333;
+  border-radius: 32px;
+  background-color: #ccc;
+  padding: 9px;
+  margin: 0px 5px 0px 0px;
+  font-size: 14px;
+}
+.pro input {
+  margin: 0px;
+  padding: 5px 10px;
+}
+.pro select {
+  margin: 0px;
+  padding: 5px 10px;
+  border: 2px solid plum;
+}

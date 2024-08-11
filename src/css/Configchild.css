@@ -1,0 +1,76 @@
+.config {
+  width: 100%;
+}
+.confighead {
+  width: 100%;
+  margin: 0px;
+  padding: 15px 0px 0px 0px;
+  display: inline-flex;
+}
+.confighead .fa {
+  font-size: 16px;
+  color: #222;
+  padding: 5px 10px;
+}
+.confighead h3 {
+  font-size: 17px;
+  color: #222;
+  padding: 2px 5px;
+}
+.config .configchild .configform {
+  padding: 0px 0% 10px 0%;
+  margin: 0px;
+  width: 100%;
+}
+.config .configchild .configform label {
+  width: 25%;
+  margin: 0px 0% 0px 0%;
+}
+.config .configchild .configform input {
+  padding: 5px 10px;
+  margin: 10px 0% 0px 0%;
+  width: 70%;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.config .configchild .configform textarea {
+  padding: 5px 10px;
+  margin: 10px 0% 0px 0%;
+  outline: none;
+  width: 70%;
+  height: 15vh;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+.config .configchild {
+  padding: 10px;
+  margin: 0px 0% 10px 0%;
+  width: 100%;
+  border-radius: 2px;
+}
+@media screen and (max-width: 670px) {
+  .config .configform {
+    padding: 10px 0% 10px 0%;
+    margin: 0px;
+    width: 100%;
+  }
+  .config .confighead {
+    width: 100%;
+    margin: 0px;
+    padding: 40px 0px 0px 10px;
+    display: inline-flex;
+  }
+  .config .configform label {
+    width: 40%;
+    margin: 0px 0% 0px 5%;
+  }
+  .config .configform input {
+    padding: 5px 10px;
+    margin: 10px 0% 0px 0%;
+    width: 50%;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+  }
+}
